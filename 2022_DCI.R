@@ -136,12 +136,26 @@ Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0",
 #Total-Score
 
 #RI-Defense
+Dci$"RI-Defense" <- ifelse(grepl("3", RawData$Stu25), "0", 
+                    ifelse(grepl("5", RawData$Stu25), "1", ""))
+
 #RI-Foul
+Dci$"RI-Foul" <- ifelse(grepl("3", RawData$Stu50), "1", "")
+
 #RI-Tech+BX1Foul
+Dci$"RI-Tech+BX1Foul" <- ifelse(grepl("5", RawData$Stu50), "1", "")
+
 #RI-NoShow
+Dci$"RI-NoShow" <- ifelse(grepl("3", RawData$Stu75), "1", "")
+
 #RI-Broke
+Dci$"RI-Broke" <- ifelse(grepl("4", RawData$Stu75), "1", "")
+
 #RI-Dead
+Dci$"RI-Dead" <- ifelse(grepl("5", RawData$Stu75), "1", "")
+
 #RI-Feedback
+Dci$"RI-Feedback" <- ifelse(grepl("5", RawData$Stu94), "1", "")
 
 write.csv(Dci,"TEST.csv",row.names = FALSE)
 
