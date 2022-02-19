@@ -27,17 +27,31 @@ Dci <- data.frame(Serial=1:nrow(RawData))
 #IF-Event
 
 #IF-MatchNumber
+Dci$MatchNumber <- ifelse(grepl("5", RawData$Stu1),100,0)+
+                   ifelse(is.na(RawData$Stu26),RawData$Stu51+4,RawData$Stu26-1)*10+
+                   ifelse(is.na(RawData$Stu27),RawData$Stu52+4,RawData$Stu27-1)
+
 #IF-Alliance
 Dci$Alliance <- paste(ifelse(grepl("1", RawData$Stu2), "R", 
-                             ifelse(grepl("2", RawData$Stu2), "B", "")),
+                      ifelse(grepl("2", RawData$Stu2), "B", "")),
                       
                       ifelse(grepl("3", RawData$Stu2), "1", 
-                             ifelse(grepl("4", RawData$Stu2), "2",
-                                    ifelse(grepl("5", RawData$Stu2), "3", ""))),
-                      
+                      ifelse(grepl("4", RawData$Stu2), "2",
+                      ifelse(grepl("5", RawData$Stu2), "3", ""))),
+                  
                       sep = "")
 
 #IF-ScheduleID
+Dci$ScheduleID <- Dci$MatchNumber*100 + 
+                  ifelse(grepl("13", RawData$Stu2), 1, 
+                  ifelse(grepl("14", RawData$Stu2), 2,
+                  ifelse(grepl("15", RawData$Stu2), 3,
+                  ifelse(grepl("23", RawData$Stu2), 4, 
+                  ifelse(grepl("24", RawData$Stu2), 5,
+                  ifelse(grepl("25", RawData$Stu2), 6, 0))))))
+
+
+
 
 #IF-TeamNumber
 
