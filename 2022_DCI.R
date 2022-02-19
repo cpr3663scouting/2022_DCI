@@ -80,10 +80,18 @@ Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0",
 #Auto-LowScored#
 Dci$"Auto-LowScored#" <- ifelse(!is.na(RawData$Stu7),RawData$Stu7-1,RawData$Stu8+4)
 
+#Auto-LowMissed#
+Dci$"Auto-LowMissed#" <- ifelse(!is.na(RawData$Stu32),RawData$Stu32-1,RawData$Stu33+4)
+
 #Auto-LowAccuracy
 #Auto-LowScore
+
 #Auto-HighScored#
+Dci$"Auto-HighScored#" <- ifelse(!is.na(RawData$Stu57),RawData$Stu57-1,RawData$Stu58+4)
+
 #Auto-HighMissed#
+Dci$"Auto-HighMissed#" <- ifelse(!is.na(RawData$Stu82),RawData$Stu82-1,RawData$Stu83+4)
+
 #Auto-HighAccuracy
 #Auto-HighScore
 #Auto-TotalCargo#
