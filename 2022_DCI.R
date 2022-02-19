@@ -1,5 +1,4 @@
 library('dplyr')
-library('DescTools')
 
 #Import ZipGrade Data
 RawZipGrade <- read.csv('ExportQuizFullDetail-S12Testing.csv')
@@ -15,6 +14,7 @@ RawData <- select(RawZipGrade, Stu1, Stu2, Stu3, Stu4, Stu5, Stu6, Stu7, Stu8, S
                   Stu80, Stu81, Stu82, Stu83, Stu84, Stu85, Stu86, Stu87, Stu88, Stu89,
                   Stu90, Stu91, Stu92, Stu93, Stu94, Stu95, Stu96, Stu97, Stu98, Stu99,
                   Stu100)
+
 #ScouterID Information
 Id <- c("A1A","A1B","A1C","A1D","A1E","A2A","A2B","A2C","A2D","A2E")
 Name <- c("MaxLY","AvaH","KathleenK","NatalieS","NoahR","TakeshiT","IsaacK","MaliaL","GabeM","ChipT")
@@ -44,7 +44,6 @@ Dci$Alliance <- paste(ifelse(grepl("1", RawData$Stu2), "R",
 #IF-TeamName
 
 #IF-ScouterID
-Dci$ScouterID <- paste(AscToChar(RawData$Stu3),AscToChar(RawData$Stu53))
 
 #IF-ScouterName
 
@@ -68,8 +67,6 @@ Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0",
                    ifelse(grepl("4", RawData$Stu29), "1", ""))
 
 
-
 write.csv(Dci,"TEST.csv",row.names = FALSE)
-
 
 
