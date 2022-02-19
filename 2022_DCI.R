@@ -28,8 +28,8 @@ Dci <- data.frame(Serial=1:nrow(RawData))
 
 #IF-MatchNumber
 Dci$MatchNumber <- ifelse(grepl("5", RawData$Stu1),100,0)+
-                   ifelse(is.na(RawData$Stu26),RawData$Stu51+4,RawData$Stu26-1)*10+
-                   ifelse(is.na(RawData$Stu27),RawData$Stu52+4,RawData$Stu27-1)
+                   ifelse(!is.na(RawData$Stu26),RawData$Stu26-1,RawData$Stu51+4)*10+
+                   ifelse(!is.na(RawData$Stu27),RawData$Stu27-1,RawData$Stu52+4)
 
 #IF-Alliance
 Dci$Alliance <- paste(ifelse(grepl("1", RawData$Stu2), "R", 
@@ -49,9 +49,6 @@ Dci$ScheduleID <- Dci$MatchNumber*100 +
                   ifelse(grepl("23", RawData$Stu2), 4, 
                   ifelse(grepl("24", RawData$Stu2), 5,
                   ifelse(grepl("25", RawData$Stu2), 6, 0))))))
-
-
-
 
 #IF-TeamNumber
 
@@ -80,9 +77,8 @@ Dci$ScheduleID <- Dci$MatchNumber*100 +
 Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0", 
                    ifelse(grepl("4", RawData$Stu29), "1", ""))
 
-
-
 #Auto-LowScored#
+Dci$"Auto-LowScored#" <- ifelse(!is.na(RawData$Stu7),RawData$Stu7-1,RawData$Stu8+4)
 
 #Auto-LowAccuracy
 #Auto-LowScore
@@ -95,6 +91,11 @@ Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0",
 #Auto-TotalScore
 
 #Tele-LowScored#
+Dci$"Tele-LowScored#" <- ifelse(!is.na(RawData$Stu13),RawData$Stu13-1,
+                         ifelse(!is.na(RawData$Stu14),RawData$Stu14+4,
+                         ifelse(!is.na(RawData$Stu15),RawData$Stu15+9,
+                         ifelse(!is.na(RawData$Stu16),RawData$Stu16+14,""))))
+
 #Tele-LowMissed#
 #Tele-LowAccuracy
 #Tele-LowScore
