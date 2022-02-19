@@ -154,6 +154,10 @@ Dci$"RI-Broke" <- ifelse(grepl("4", RawData$Stu75), "1", "")
 #RI-Dead
 Dci$"RI-Dead" <- ifelse(grepl("5", RawData$Stu75), "1", "")
 
+
+#RI-ReScout
+Dci$"RI-ReScout" <- ifelse(grepl("4", RawData$Stu94), "1", "")
+
 #RI-Feedback
 Dci$"RI-Feedback" <- ifelse(grepl("5", RawData$Stu94), "1", "")
 
