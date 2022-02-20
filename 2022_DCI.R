@@ -63,15 +63,7 @@ Dci$ScheduleID <- Dci$MatchNumber*100 +
 #IF-OfficialName
 
 #IF-Rescout
-#
-#
-#
-#
-#
-
-
-
-
+Dci$"RI-ReScout" <- ifelse(grepl("4", RawData$Stu94), "1", "")
 
 # Auto-Taxi
 Dci$"Auto-Taxi" <- ifelse(grepl("2", RawData$Stu29), "0", 
@@ -98,48 +90,43 @@ Dci$"Auto-HighMissed#" <- ifelse(!is.na(RawData$Stu82),RawData$Stu82-1,RawData$S
 #Auto-CargoScore
 #Auto-TotalScore
 
-"Tele#" <- function(col1, col2, col3, col4) {
-  output <- ifelse(!is.na(col1),col1-1,
-            ifelse(!is.na(col2),col2+4,
-            ifelse(!is.na(col3),col3+9,
-            ifelse(!is.na(col4),col4+14,""))))
+TeleNum <- function(col1, col2, col3, col4) {
+  output <- ifelse(!is.na(RawData[[col1]]),RawData[[col1]]-1,
+            ifelse(!is.na(RawData[[col2]]),RawData[[col2]]+4,
+            ifelse(!is.na(RawData[[col3]]),RawData[[col3]]+9,
+            ifelse(!is.na(RawData[[col4]]),RawData[[col4]]+14,""))))
 }
 
-
-
-
-#"Test" <- function(firstRow, rowCount) {
-#  Dci$"test1" <- data.frame(Serial=1:nrow(RawData))
-#  Dci$"test1" <- Dci$"test1" + for ( i in firstRow:(firstRow + rowCount -1)) {
-#    ifelse (!is.na(RawData[i]),RawData[i]*5-6,0)
-#  }
-#}
-
-
-
-#Dci$"test1" <- "Test"(4,13)
-
-Dci$"Tele-LowMissed#" <- `Tele#`(RawData$Stu13, RawData$Stu14, RawData$Stu15, RawData$Stu16)
-
-
-
-
-
 #Tele-LowScored#
-Dci$"Tele-LowScored#" <- ifelse(!is.na(RawData$Stu13),RawData$Stu13-1,
-                         ifelse(!is.na(RawData$Stu14),RawData$Stu14+4,
-                         ifelse(!is.na(RawData$Stu15),RawData$Stu15+9,
-                         ifelse(!is.na(RawData$Stu16),RawData$Stu16+14,""))))
+Dci$"Tele-LowScored#" <- TeleNum(13,14,15,16)
 
 #Tele-LowMissed#
+Dci$"Tele-LowMissed#" <- TeleNum(38,39,40,41)
+
 #Tele-LowAccuracy
+
+
 #Tele-LowScore
+
+
 #Tele-HighScored#
+Dci$"Tele-HighScored#" <- TeleNum(63,64,65,66)
+
 #Tele-HighMissed#
+Dci$"#Tele-HighMissed#" <- TeleNum(88,89,90,91)
+
 #Tele-HighAccuracy
+
+
 #Tele-HighScore
+
+
 #Tele-TotalCargo#
+
+
 #Tele-CargoScore
+
+
 #Tele-TotalScore
 
 
@@ -203,10 +190,6 @@ Dci$"RI-Broke" <- ifelse(grepl("4", RawData$Stu75), "1", "")
 
 #RI-Dead
 Dci$"RI-Dead" <- ifelse(grepl("5", RawData$Stu75), "1", "")
-
-
-#RI-ReScout
-Dci$"RI-ReScout" <- ifelse(grepl("4", RawData$Stu94), "1", "")
 
 #RI-Feedback
 Dci$"RI-Feedback" <- ifelse(grepl("5", RawData$Stu94), "1", "")
