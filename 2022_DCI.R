@@ -90,6 +90,33 @@ Dci$"Auto-LowScored#" <- ifelse(!is.na(RawData$Stu7),RawData$Stu7-1,RawData$Stu8
 #Auto-CargoScore
 #Auto-TotalScore
 
+"Tele#" <- function(col1, col2, col3, col4) {
+  output <- ifelse(!is.na(col1),col1-1,
+            ifelse(!is.na(col2),col2+4,
+            ifelse(!is.na(col3),col3+9,
+            ifelse(!is.na(col4),col4+14,""))))
+}
+
+
+
+
+#"Test" <- function(firstRow, rowCount) {
+#  Dci$"test1" <- data.frame(Serial=1:nrow(RawData))
+#  Dci$"test1" <- Dci$"test1" + for ( i in firstRow:(firstRow + rowCount -1)) {
+#    ifelse (!is.na(RawData[i]),RawData[i]*5-6,0)
+#  }
+#}
+
+
+
+#Dci$"test1" <- "Test"(4,13)
+
+Dci$"Tele-LowMissed#" <- `Tele#`(RawData$Stu13, RawData$Stu14, RawData$Stu15, RawData$Stu16)
+
+
+
+
+
 #Tele-LowScored#
 Dci$"Tele-LowScored#" <- ifelse(!is.na(RawData$Stu13),RawData$Stu13-1,
                          ifelse(!is.na(RawData$Stu14),RawData$Stu14+4,
