@@ -27,7 +27,7 @@ Dci <- data.frame(Serial=1:nrow(RawData))
 #IF-Event
 
 #IF-MatchNumber
-Dci$'MatchNumber' <- ifelse(grepl("5", RawData$Stu1),100,0)+
+Dci$'MatchNumber' <- ifelse(grepl("5", RawData[[1]]),100,0)+
                    ifelse(!is.na(RawData[[26]]),RawData[[26]]-1,RawData[[51]]+4)*10+
                    ifelse(!is.na(RawData[[27]]),RawData[[27]]-1,RawData[[52]]+4)
 
@@ -63,29 +63,12 @@ Dci$'ScheduleID' <- Dci$MatchNumber*100 +
 #IF-OfficialName
 
 #IF-Rescout
-Dci$'RI-ReScout' <- ifelse(grepl("4", RawData[[94]]), "1", "")
-
-# Auto-Taxi
-Dci$'Auto-Taxi' <- ifelse(grepl("2", RawData[[29]]), "0", ifelse(grepl("4", RawData[[29]]), "1", ""))
+Dci$'RI-ReScout' <- ifelse(grepl("4", RawData[[94]]), 1, 0)
 
 
-
-
-AutoNum <- function(col1, col2) {
-  output <- ifelse(!is.na(RawData[[col1]]),RawData[[col1]]-1,
-            ifelse(!is.na(RawData[[col2]]),RawData[[col2]]+4,""))
-}
-TeleNum <- function(col1, col2, col3, col4) {
-  output <- ifelse(!is.na(RawData[[col1]]),RawData[[col1]]-1,
-            ifelse(!is.na(RawData[[col2]]),RawData[[col2]]+4,
-            ifelse(!is.na(RawData[[col3]]),RawData[[col3]]+9,
-            ifelse(!is.na(RawData[[col4]]),RawData[[col4]]+14,""))))
-}
-#Testing
-TestSep <- function(firstCol, numCol) {
-  for(i in firstCol:(firstCol + numCol -1)) {
-    print(RawData[[i]])
-  }
+#Functions
+CargoAccuracy <- function(scored, missed) {
+  ifelse(scored + missed == 0, rep("", nrow(Dci)), scored/(scored+missed))
 }
 
 NumArray <- function(firstCol, numCol) {
@@ -96,7 +79,35 @@ NumArray <- function(firstCol, numCol) {
   return(output)
 }
 
+Point <- function(item, point) {
+  
+}
 
+#Backups
+AutoNum <- function(col1, col2) {
+  output <- ifelse(!is.na(RawData[[col1]]),RawData[[col1]]-1,
+            ifelse(!is.na(RawData[[col2]]),RawData[[col2]]+4, NA))
+}
+TeleNum <- function(col1, col2, col3, col4) {
+  output <- ifelse(!is.na(RawData[[col1]]),RawData[[col1]]-1,
+            ifelse(!is.na(RawData[[col2]]),RawData[[col2]]+4,
+            ifelse(!is.na(RawData[[col3]]),RawData[[col3]]+9,
+            ifelse(!is.na(RawData[[col4]]),RawData[[col4]]+14, NA))))
+}
+TestSep <- function(firstCol, numCol) {
+  for(i in firstCol:(firstCol + numCol -1)) {
+    print(RawData[[i]])
+  }
+}
+
+
+
+# Auto-Taxi
+Dci$'Auto-Taxi' <- ifelse(grepl("2", RawData[[29]]), 0, 
+                   ifelse(grepl("4", RawData[[29]]), 1, NA))
+
+# Auto-TaxiScore
+Dci$'Auto-TaxiScore' <- ifelse(is.na(Dci$'Auto-Taxi'), rep(0,nrow(Dci)), Dci$'Auto-Taxi'*2)
 
 #Auto-LowScored#
 Dci$'Auto-LowScored#' <- NumArray(7,2)
@@ -105,18 +116,10 @@ Dci$'Auto-LowScored#' <- NumArray(7,2)
 Dci$'Auto-LowMissed#' <- NumArray(32, 2)
 
 #Auto-LowAccuracy
-<<<<<<< Updated upstream
-Dci$'Auto-LowAccuracy' <- Dci$'Auto-LowScored#'/(Dci$'Auto-LowScored#'+Dci$'Auto-LowMissed#')
+Dci$'Auto-LowAccuracy' <- Dci$'Auto-LowScored#'/(Dci$'Auto-LowScored#'+ Dci$'Auto-LowMissed#')
 
 #Auto-LowScore
-Dci$'LowScore' <- Dci$'Auto-LowScored#'*2
-=======
-#DO NOT USE (Broken)
-Dci$"LowAccuracy" <- ifelse(Dci$"Auto-LowScored#"== 0):(Dci$"Auto-LowScored#"/"Attempt")
-  
-#Auto-Attempt
-Dci$"Attempt" <- Dci$"Auto-LowScored#" + Dci$"Auto-LowMissed#"
->>>>>>> Stashed changes
+Dci$''
 
 #Auto-HighScored#
 Dci$'Auto-HighScored#' <- NumArray(57,2)
@@ -125,48 +128,28 @@ Dci$'Auto-HighScored#' <- NumArray(57,2)
 Dci$'Auto-HighMissed#' <- NumArray(82,2)
 
 #Auto-HighAccuracy
-<<<<<<< Updated upstream
-Dci$'Auto-HighAccuracy' <- Dci$'Auto-HighScored#'/(Dci$'Auto-HighScored#'+Dci$'Auto-HighMissed#')
+Dci$'Auto-HighAccuracy' <- Dci$'Auto-HighScored#'/(Dci$'Auto-HighScored#' + Dci$'Auto-HighMissed#')
 
 #Auto-HighScore
-Dci$'HighScore' <- Dci$'Auto-HighScored#'*4
+Dci$''
 
 #Auto-TotalCargo#
-#Auto Taxi needs to be verified
-Dci$'TotalCargo' <- Dci$'Auto-LowScored#'+ Dci$'Auto-HighScored#' 
-
-
+Dci$''
 
 #Auto-CargoScore
-Dci$'CargoScore' <- Dci$'HighScore' + Dci$'LowScore'
-
-
-
-=======
-
-#Auto-HighScore
-
-#Auto-TotalCargo#
-
-#Auto-CargoScore
->>>>>>> Stashed changes
+Dci$''
 
 #Auto-TotalScore
-Dci$'TotalScore' <- Dci$'HighScore' + Dci$'LowScore' + ifelse(Dci$'Auto-Taxi')
-
-
-
-
+Dci$''
 
 #Tele-LowScored#
 Dci$'Tele-LowScored#' <- NumArray(13,4)
 
 #Tele-LowMissed#
-<<<<<<< Updated upstream
 Dci$'Tele-LowMissed#' <- NumArray(38,4)
 
 #Tele-LowAccuracy
-Dci$'Tele-LowAccuracy' <- Dci$'Tele-LowScored#'/(Dci$'Tele-LowScored#'+Dci$'Tele-LowMissed#')
+Dci$'Tele-LowAccuracy' <- Dci$'Tele-LowScored#'/(Dci$'Tele-LowScored#' + Dci$'Tele-LowMissed#')
 
 #Tele-LowScore
 Dci$''
@@ -177,8 +160,28 @@ Dci$'Tele-HighScored#' <- NumArray(63,4)
 #Tele-HighMissed#
 Dci$'#Tele-HighMissed#' <- NumArray(88,4)
 
-#Tele-HighAccuracy
-Dci$'Tele-HighAccuracy' <- Dci$'Tele-HighScored#'/(Dci$'Tele-HighScored#'+Dci$'Tele-HighMissed#')
+
+
+Dci$'Auto-LowScored#'==0
+
+
+
+print(Dci$'Auto-LowScored#'==0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+print(NumArray(63,4))
+print(NumArray(88,4))
 
 #Tele-HighScore
 Dci$''
@@ -188,32 +191,11 @@ Dci$''
 
 #Tele-CargoScore
 Dci$''
-=======
-
-#Tele-LowAccuracy
-
-#Tele-LowScore
-
-#Tele-HighScored#
-
-#Tele-HighMissed#
-
-#Tele-HighAccuracy
-
-#Tele-HighScore
-
-#Tele-TotalCargo#
-
-#Tele-CargoScore
-
-#Tele-TotalScore
->>>>>>> Stashed changes
 
 #Tele-TotalScore
 Dci$''
 
 #EG-Climb1Attempt
-<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb1Failed
@@ -230,25 +212,11 @@ Dci$''
 
 #EG-Climb1SetUpTime
 Dci$''
-=======
-
-#EG-Climb1Failed
-
-#EG-Climb1Latched
-
-#EG-Climb1Scored
-
-#EG-Climb1Accuracy
-
-#EG-Climb1SetUpTime
->>>>>>> Stashed changes
 
 #EG-Climb1AscendTime
 Dci$''
 
-
 #EG-Climb2Attempt
-<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb2Failed
@@ -265,26 +233,12 @@ Dci$''
 
 #EG-Climb2SetUpTime
 Dci$''
-=======
-
-#EG-Climb2Failed
-
-#EG-Climb2Latched
-
-#EG-Climb2Scored
-
-#EG-Climb2Accuracy
-
-#EG-Climb2SetUpTime
->>>>>>> Stashed changes
 
 #EG-Climb2AscendTime
 Dci$''
 
 
-
 #EG-Climb3Attempt
-<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb3Failed
@@ -301,25 +255,11 @@ Dci$''
 
 #EG-Climb3SetUpTime
 Dci$''
-=======
-
-#EG-Climb3Failed
-
-#EG-Climb3Latched
-
-#EG-Climb3Scored
-
-#EG-Climb3Accuracy
-
-#EG-Climb3SetUpTime
->>>>>>> Stashed changes
 
 #EG-Climb3AscendTime
 Dci$''
 
-
 #EG-Climb4Attempt
-<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb4Failed
@@ -336,18 +276,6 @@ Dci$''
 
 #EG-Climb4SetUpTime
 Dci$''
-=======
-
-#EG-Climb4Failed
-
-#EG-Climb4Latched
-
-#EG-Climb4Scored
-
-#EG-Climb4Accuracy
-
-#EG-Climb4SetUpTime
->>>>>>> Stashed changes
 
 #EG-Climb4AscendTime
 Dci$''
@@ -358,7 +286,6 @@ Dci$''
 #Total-LowCargo
 Dci$''
 
-<<<<<<< Updated upstream
 #Total-HighCargo#
 Dci$''
 
@@ -373,24 +300,9 @@ Dci$''
 
 #Total-CargoScore
 Dci$''
-=======
-
-#Total-LowCargo#
-
-#Total-HighCargo#
-
-#Total-Cargo#
-
-#Total-LowCargoScore
-
-#Total-HighCargoScore
-
-#Total-CargoScore
->>>>>>> Stashed changes
 
 #Total-Score
 Dci$''
-
 
 #RI-Defense
 Dci$'RI-Defense' <- ifelse(grepl("3", RawData$Stu25), "0", 
