@@ -66,8 +66,9 @@ Dci$'ScheduleID' <- Dci$MatchNumber*100 +
 Dci$'RI-ReScout' <- ifelse(grepl("4", RawData[[94]]), "1", "")
 
 # Auto-Taxi
-Dci$'Auto-Taxi' <- ifelse(grepl("2", RawData[[29]]), "0", 
-                   ifelse(grepl("4", RawData[[29]]), "1", ""))
+Dci$'Auto-Taxi' <- ifelse(grepl("2", RawData[[29]]), "0", ifelse(grepl("4", RawData[[29]]), "1", ""))
+
+
 
 
 AutoNum <- function(col1, col2) {
@@ -107,7 +108,7 @@ Dci$'Auto-LowMissed#' <- NumArray(32, 2)
 Dci$'Auto-LowAccuracy' <- Dci$'Auto-LowScored#'/(Dci$'Auto-LowScored#'+Dci$'Auto-LowMissed#')
 
 #Auto-LowScore
-Dci$''
+Dci$'LowScore' <- Dci$'Auto-LowScored#'*2
 
 #Auto-HighScored#
 Dci$'Auto-HighScored#' <- NumArray(57,2)
@@ -119,16 +120,26 @@ Dci$'Auto-HighMissed#' <- NumArray(82,2)
 Dci$'Auto-HighAccuracy' <- Dci$'Auto-HighScored#'/(Dci$'Auto-HighScored#'+Dci$'Auto-HighMissed#')
 
 #Auto-HighScore
-Dci$''
+Dci$'HighScore' <- Dci$'Auto-HighScored#'*4
 
 #Auto-TotalCargo#
-Dci$''
+#Auto Taxi needs to be verified
+Dci$'TotalCargo' <- Dci$'Auto-LowScored#'+ Dci$'Auto-HighScored#' 
+
+
 
 #Auto-CargoScore
-Dci$''
+Dci$'CargoScore' <- Dci$'HighScore' + Dci$'LowScore'
+
+
+
 
 #Auto-TotalScore
-Dci$''
+Dci$'TotalScore' <- Dci$'HighScore' + Dci$'LowScore' + ifelse(Dci$'Auto-Taxi')
+
+
+
+
 
 #Tele-LowScored#
 Dci$'Tele-LowScored#' <- NumArray(13,4)
