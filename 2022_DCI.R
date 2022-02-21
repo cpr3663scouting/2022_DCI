@@ -105,10 +105,18 @@ Dci$'Auto-LowScored#' <- NumArray(7,2)
 Dci$'Auto-LowMissed#' <- NumArray(32, 2)
 
 #Auto-LowAccuracy
+<<<<<<< Updated upstream
 Dci$'Auto-LowAccuracy' <- Dci$'Auto-LowScored#'/(Dci$'Auto-LowScored#'+Dci$'Auto-LowMissed#')
 
 #Auto-LowScore
 Dci$'LowScore' <- Dci$'Auto-LowScored#'*2
+=======
+#DO NOT USE (Broken)
+Dci$"LowAccuracy" <- ifelse(Dci$"Auto-LowScored#"== 0):(Dci$"Auto-LowScored#"/"Attempt")
+  
+#Auto-Attempt
+Dci$"Attempt" <- Dci$"Auto-LowScored#" + Dci$"Auto-LowMissed#"
+>>>>>>> Stashed changes
 
 #Auto-HighScored#
 Dci$'Auto-HighScored#' <- NumArray(57,2)
@@ -117,6 +125,7 @@ Dci$'Auto-HighScored#' <- NumArray(57,2)
 Dci$'Auto-HighMissed#' <- NumArray(82,2)
 
 #Auto-HighAccuracy
+<<<<<<< Updated upstream
 Dci$'Auto-HighAccuracy' <- Dci$'Auto-HighScored#'/(Dci$'Auto-HighScored#'+Dci$'Auto-HighMissed#')
 
 #Auto-HighScore
@@ -133,6 +142,14 @@ Dci$'CargoScore' <- Dci$'HighScore' + Dci$'LowScore'
 
 
 
+=======
+
+#Auto-HighScore
+
+#Auto-TotalCargo#
+
+#Auto-CargoScore
+>>>>>>> Stashed changes
 
 #Auto-TotalScore
 Dci$'TotalScore' <- Dci$'HighScore' + Dci$'LowScore' + ifelse(Dci$'Auto-Taxi')
@@ -145,6 +162,7 @@ Dci$'TotalScore' <- Dci$'HighScore' + Dci$'LowScore' + ifelse(Dci$'Auto-Taxi')
 Dci$'Tele-LowScored#' <- NumArray(13,4)
 
 #Tele-LowMissed#
+<<<<<<< Updated upstream
 Dci$'Tele-LowMissed#' <- NumArray(38,4)
 
 #Tele-LowAccuracy
@@ -170,11 +188,32 @@ Dci$''
 
 #Tele-CargoScore
 Dci$''
+=======
+
+#Tele-LowAccuracy
+
+#Tele-LowScore
+
+#Tele-HighScored#
+
+#Tele-HighMissed#
+
+#Tele-HighAccuracy
+
+#Tele-HighScore
+
+#Tele-TotalCargo#
+
+#Tele-CargoScore
+
+#Tele-TotalScore
+>>>>>>> Stashed changes
 
 #Tele-TotalScore
 Dci$''
 
 #EG-Climb1Attempt
+<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb1Failed
@@ -191,11 +230,25 @@ Dci$''
 
 #EG-Climb1SetUpTime
 Dci$''
+=======
+
+#EG-Climb1Failed
+
+#EG-Climb1Latched
+
+#EG-Climb1Scored
+
+#EG-Climb1Accuracy
+
+#EG-Climb1SetUpTime
+>>>>>>> Stashed changes
 
 #EG-Climb1AscendTime
 Dci$''
 
+
 #EG-Climb2Attempt
+<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb2Failed
@@ -212,12 +265,26 @@ Dci$''
 
 #EG-Climb2SetUpTime
 Dci$''
+=======
+
+#EG-Climb2Failed
+
+#EG-Climb2Latched
+
+#EG-Climb2Scored
+
+#EG-Climb2Accuracy
+
+#EG-Climb2SetUpTime
+>>>>>>> Stashed changes
 
 #EG-Climb2AscendTime
 Dci$''
 
 
+
 #EG-Climb3Attempt
+<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb3Failed
@@ -234,11 +301,25 @@ Dci$''
 
 #EG-Climb3SetUpTime
 Dci$''
+=======
+
+#EG-Climb3Failed
+
+#EG-Climb3Latched
+
+#EG-Climb3Scored
+
+#EG-Climb3Accuracy
+
+#EG-Climb3SetUpTime
+>>>>>>> Stashed changes
 
 #EG-Climb3AscendTime
 Dci$''
 
+
 #EG-Climb4Attempt
+<<<<<<< Updated upstream
 Dci$''
 
 #EG-Climb4Failed
@@ -255,6 +336,18 @@ Dci$''
 
 #EG-Climb4SetUpTime
 Dci$''
+=======
+
+#EG-Climb4Failed
+
+#EG-Climb4Latched
+
+#EG-Climb4Scored
+
+#EG-Climb4Accuracy
+
+#EG-Climb4SetUpTime
+>>>>>>> Stashed changes
 
 #EG-Climb4AscendTime
 Dci$''
@@ -265,6 +358,7 @@ Dci$''
 #Total-LowCargo
 Dci$''
 
+<<<<<<< Updated upstream
 #Total-HighCargo#
 Dci$''
 
@@ -279,9 +373,24 @@ Dci$''
 
 #Total-CargoScore
 Dci$''
+=======
+
+#Total-LowCargo#
+
+#Total-HighCargo#
+
+#Total-Cargo#
+
+#Total-LowCargoScore
+
+#Total-HighCargoScore
+
+#Total-CargoScore
+>>>>>>> Stashed changes
 
 #Total-Score
 Dci$''
+
 
 #RI-Defense
 Dci$'RI-Defense' <- ifelse(grepl("3", RawData$Stu25), "0", 
