@@ -13,8 +13,6 @@ result3 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches/s
 body3 <- content(result3, "text")
 data3 <- fromJSON(body3)
 
-https://www.thebluealliance.com/api/v3/event/2022week0/matches?X-TBA-Auth-Key=apiKey=vDx41j9o7PjJWnVaRyN9ZEUgHA8j5PDQgdnesAEE9JlpLUCzjrrzJmQb4XAikldY
-
 
 #Import ZipGrade Data
 RawZipGrade <- read.csv('ExportQuizFullDetail-S12Testing.csv')
@@ -89,8 +87,8 @@ TestSep <- function(firstCol, numCol) {
   }
 }
 
-
 #IF-Event
+Dci$'IF-Event' <- Bubble(1,1) + Bubble(2,1)*2 + Bubble(3,1)*3
 
 #IF-MatchNumber
 Dci$'MatchNumber' <- ifelse(grepl("5", RawData[[1]]),100,0)+
@@ -282,6 +280,7 @@ Dci$'EG-TotalScore' <- Dci$'EG-Climb1Scored' + Dci$'EG-Climb2Scored' + Dci$'EG-C
 
 #Total-LowCargo
 Dci$'Total-LowCargo' <- Dci$'Auto-LowScored#'+ Dci$'Tele-LowScored#'
+
 #Total-HighCargo#
 Dci$'Total-HighCargo#' <- Dci$'Auto-HighScored#'+ Dci$'Tele-HighScored#'
 
