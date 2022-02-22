@@ -274,25 +274,24 @@ Dci$'EG-ClimbAscendTime' <- ifelse(grepl(1, RawData[[69]]), NA, NumArray(69,4))
 Dci$'EG-TotalScore' <- Dci$'EG-Climb1Scored' + Dci$'EG-Climb2Scored' + Dci$'EG-Climb3Scored' + Dci$'EG-Climb4Scored'
 
 #Total-LowCargo
-Dci$'Total-LowCargo'
-
+Dci$'Total-LowCargo' <- Dci$'Auto-LowScored#'+ Dci$'Tele-LowScored#'
 #Total-HighCargo#
-Dci$'Total-HighCargo#'
+Dci$'Total-HighCargo#' <- Dci$'Auto-HighScored#'+ Dci$'Tele-HighScored#'
 
 #Total-Cargo#
-Dci$'Total-Cargo#'
+Dci$'Total-Cargo#' <- Dci$'Auto-TotalCargo#'+ Dci$'Tele-TotalCargo#'
 
 #Total-LowCargoScore
-Dci$'Total-LowCargoScore'
+Dci$'Total-LowCargoScore' <- Dci$'Auto-LowPoint'+ Dci$'Tele-LowPoint'
 
 #Total-HighCargoScore
-Dci$'Total-HighCargoScore'
+Dci$'Total-HighCargoScore' <- Dci$'Auto-HighPoint'+ Dci$'Tele-HighPoint'
 
 #Total-CargoScore
-Dci$'Total-CargoScore'
+Dci$'Total-CargoScore' <- Dci$'Total-LowCargoScore'+ Dci$'Total-HighCargoScore'
 
 #Total-Score
-Dci$'Total-Score'
+Dci$'Total-Score' <- Dci$'Auto-TotalPoint'+ Dci$'Tele-TotalScore'+ Dci$'EG-TotalScore'
 
 #RI-Defense
 Dci$'RI-Defense' <- ifelse(grepl("3", RawData[[25]]), 0, 
