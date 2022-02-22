@@ -3,9 +3,16 @@ library("httr")
 library('jsonlite')
 
 apiKey <- "SBcyOBkFgzIQ8jVIlum24FnnI4KPq4VSA5MYtdCVMgDrZYaMfYduTjMGKO5A9AVz"
-result <- GET("https://frc-api.firstinspires.org/v3.0/",add_headers("X-TBA-Auth-Key" = apiKey))
+result1 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/teams", add_headers("X-TBA-Auth-Key"=apiKey))
+body1 <- content(result1, "text")
+data1 <- fromJSON(body1)
+result2 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches", add_headers("X-TBA-Auth-Key"=apiKey))
+body2 <- content(result2, "text")
+data2 <- fromJSON(body2)
+result3 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple", add_headers("X-TBA-Auth-Key"=apiKey))
+body3 <- content(result3, "text")
+data3 <- fromJSON(body3)
 
-team <- GET("https://www.thebluealliance.com/api/v3/events/2022",add_headers("X-TBA-Auth-Key" = apiKey))
 
 
 
