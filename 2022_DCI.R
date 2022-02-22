@@ -13,7 +13,7 @@ result3 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches/s
 body3 <- content(result3, "text")
 data3 <- fromJSON(body3)
 
-
+https://www.thebluealliance.com/api/v3/event/2022week0/matches?X-TBA-Auth-Key=apiKey=vDx41j9o7PjJWnVaRyN9ZEUgHA8j5PDQgdnesAEE9JlpLUCzjrrzJmQb4XAikldY
 
 
 #Import ZipGrade Data
