@@ -38,7 +38,7 @@ resource_matchsimple <-  fromJSON(info_matchesimple)
 # create 
 RawMatchData <- select(resource_matches, alliances.blue.score, alliance.red.score, score_breakdown$blue$autoCargoLowerBlue, score_breakdown$red$autoCargoLowerRed, 
                 score_breakdown$blue$autoCargoPoints, score_breakdown$blue$autoCargoTotal, score_breakdown$blue$autoPoints, score_breakdown$blue$autoTaxiPoints, score_breakdown$blue$endgamePoints,
-                score_breakdown$blue$taxiRobot1)
+                score_breakdown$blue$taxiRobot1, score_breakdown$blue$teleopCargoTotal)
 
 
 
