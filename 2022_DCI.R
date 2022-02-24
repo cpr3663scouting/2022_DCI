@@ -1,21 +1,74 @@
 library('dplyr')
-library("httr")
+library('httr')
 library('jsonlite')
+library('base')
 
-apiKey <- "SBcyOBkFgzIQ8jVIlum24FnnI4KPq4VSA5MYtdCVMgDrZYaMfYduTjMGKO5A9AVz"
-result1 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/teams", add_headers("X-TBA-Auth-Key"=apiKey))
-body1 <- content(result1, "text")
-data1 <- fromJSON(body1)
-result2 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches", add_headers("X-TBA-Auth-Key"=apiKey))
-body2 <- content(result2, "text")
-data2 <- fromJSON(body2)
-result3 <- GET("https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple", add_headers("X-TBA-Auth-Key"=apiKey))
-body3 <- content(result3, "text")
-data3 <- fromJSON(body3)
+ApiKey <- "SBcyOBkFgzIQ8jVIlum24FnnI4KPq4VSA5MYtdCVMgDrZYaMfYduTjMGKO5A9AVz"
+
+PullData <- function(Key, URL) {
+  a <- GET(URL, add_headers("X-TBA-Auth-Key"=Key))
+  b <- content(a, "text")
+  c <- fromJSON(b)
+  d <- flatten(c)
+}
+
+Matches <- PullData(ApiKey, "https://www.thebluealliance.com/api/v3/event/2022week0/matches")
+SimpleMatches <- PullData(ApiKey, "https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple")
+
+#MatchSchedule
+MatchSchedule <- filter(SimpleMatches, grepl("qm",SimpleMatches$comp_level)) %>% 
+  select("comp_level", "match_number", "alliances.blue.team_keys", "alliances.red.team_keys") %>% 
+  arrange(match_number)
+
+RedTeam <- data.frame(MatchSchedule$alliances.red.team_keys)
+BlueTeam <- data.frame(MatchSchedule$alliances.blue.team_keys)
+
+for (i in 1:3) {
+  MatchSchedule <- mutate(MatchSchedule, "R" = rep(NA, nrow(MatchSchedule)), "B" = rep(NA, nrow(MatchSchedule)))
+  names(MatchSchedule)[i+2] <- paste("R", i, sep = "")
+  names(MatchSchedule)[i+5] <- paste("B", i, sep = "")
+}
+
+for (i in 1:nrow(MatchSchedule)) {
+  for (j in 1:3) {
+    MatchSchedule[i,j+2] <- RedTeam[j,i]
+    MatchSchedule[i,j+5] <- BlueTeam[j,i]
+  }
+}
+MatchSchedule$'comp_level' <- NULL
+names(MatchSchedule)[1] <- "MatchNumber"
+
+
+MatchScheduleId <- data.frame(rep(NA, nrow(MatchSchedule)*6),
+                              rep(NA, nrow(MatchSchedule)*6))
+names(MatchScheduleId)[1] <- "IF-ScheduleID"
+names(MatchScheduleId)[2] <- "IF-TeamNumber"
+
+
+for (i in 1:(nrow(MatchSchedule)*6)) {
+  MatchScheduleId[[i,1]] <- (i+5)%/%6*100+(i+5)%%6+1
+}
+for (i in 1:(nrow(MatchSchedule)*6)) {
+  MatchScheduleId[[i,2]] <- MatchSchedule[[(i+5)%/%6,(i+5)%%6+2]]
+}
+
+#TeamInfo
+for(i in 0:19) {
+  Url <- paste('https://www.thebluealliance.com/api/v3/teams/',i,
+               '?X-TBA-Auth-Key=SBcyOBkFgzIQ8jVIlum24FnnI4KPq4VSA5MYtdCVMgDrZYaMfYduTjMGKO5A9AVz', sep='')
+  ExportName <- paste('TeamData/', i+1 ,'.csv', sep='')
+  write.csv(PullData(ApiKey, Url),ExportName,row.names = FALSE)
+}
+
+
+
+
+
+
 
 
 #Import ZipGrade Data
-RawZipGrade <- read.csv('ExportQuizFullDetail-S12Testing.csv')
+RawZipGrade <- read.csv('ExportQuizFullDetail-S12Week0.csv')
 #Create RawData
 RawData <- select(RawZipGrade, Stu1, Stu2, Stu3, Stu4, Stu5, Stu6, Stu7, Stu8, Stu9,
                   Stu10, Stu11, Stu12, Stu13, Stu14, Stu15, Stu16, Stu17, Stu18, Stu19,
@@ -29,9 +82,9 @@ RawData <- select(RawZipGrade, Stu1, Stu2, Stu3, Stu4, Stu5, Stu6, Stu7, Stu8, S
                   Stu90, Stu91, Stu92, Stu93, Stu94, Stu95, Stu96, Stu97, Stu98, Stu99,
                   Stu100)
 
-#ScouterID Information
-IssId <- read.csv('ISS_ID.csv')
-IssId$'IF-ScouterSeq' <- mutate(IssId, IdSeq)
+#ScouterID & Team Information
+IssId <- read.csv('IssId.csv')
+TeamData <- read.csv("TeamData.csv")
 
 #Data Collection Interface
 Dci <- data.frame(Serial=1:nrow(RawData))
@@ -91,12 +144,12 @@ TestSep <- function(firstCol, numCol) {
 Dci$'IF-Event' <- Bubble(1,1) + Bubble(2,1)*2 + Bubble(3,1)*3
 
 #IF-MatchNumber
-Dci$'MatchNumber' <- ifelse(grepl("5", RawData[[1]]),100,0)+
+Dci$'IF-MatchNumber' <- ifelse(grepl("5", RawData[[1]]),100,0)+
   ifelse(!is.na(RawData[[26]]),RawData[[26]]-1,RawData[[51]]+4)*10+
   ifelse(!is.na(RawData[[27]]),RawData[[27]]-1,RawData[[52]]+4)
 
 #IF-Alliance
-Dci$'Alliance' <- paste(ifelse(grepl("1", RawData[[2]]), "R", 
+Dci$'IF-Alliance' <- paste(ifelse(grepl("1", RawData[[2]]), "R", 
                         ifelse(grepl("2", RawData[[2]]), "B", "")),
                         
                         ifelse(grepl("3", RawData[[2]]), "1", 
@@ -106,7 +159,7 @@ Dci$'Alliance' <- paste(ifelse(grepl("1", RawData[[2]]), "R",
                         sep = "")
 
 #IF-ScheduleID
-Dci$'ScheduleID' <- Dci$MatchNumber*100 + 
+Dci$'IF-ScheduleID' <- Dci$'IF-MatchNumber'*100 + 
   ifelse(grepl("13", RawData[[2]]), 1, 
   ifelse(grepl("14", RawData[[2]]), 2,
   ifelse(grepl("15", RawData[[2]]), 3,
@@ -114,10 +167,19 @@ Dci$'ScheduleID' <- Dci$MatchNumber*100 +
   ifelse(grepl("24", RawData[[2]]), 5,
   ifelse(grepl("25", RawData[[2]]), 6, 0))))))
 
-
 #IF-TeamNumber
+Dci <- left_join(Dci, MatchScheduleId, by='IF-ScheduleID')
 
 #IF-TeamName
+TeamData <- select(TeamData, key, nickname)
+names(TeamData)[1] <- "IF-TeamNumber" 
+names(TeamData)[2] <- "IF-TeamName"
+TeamData$`IF-TeamName` <- paste(TeamData$`IF-TeamNumber`,"-", TeamData$`IF-TeamName`)
+Dci <- left_join(Dci, TeamData, by='IF-TeamNumber')
+
+
+
+
 
 #IF-ScouterID
 Dci$'IF-ScouterID' <- paste(AsciiToChar(3), ifelse(is.na(RawData[[28]]),"",RawData[[28]]), AsciiToChar(53), sep = "")
@@ -127,8 +189,6 @@ Dci$'IF-ScouterSeq' <- ifelse(is.na(RawData[[3]]),0,RawData[[3]]-1)*25 +
                        ifelse(is.na(RawData[[28]]),0,RawData[[28]]-1)*5 +
                        ifelse(is.na(RawData[[53]]),0,RawData[[53]])
 
-#IF-ScouterName
-Dci$'IF-ScouterName'
 
 #IF-OfficialID
 Dci$'IF-OfficialID' <- paste(AsciiToChar(76), ifelse(is.na(RawData[[77]]),"",RawData[[77]]), AsciiToChar(78), sep = "")
@@ -144,7 +204,7 @@ Dci$'Auto-Taxi' <- ifelse(grepl("2", RawData[[29]]), 0,
                    ifelse(grepl("4", RawData[[29]]), 1, NA))
 
 # Auto-TaxiPoint
-Dci$'Auto-TaxiPoint' <- Point(Dci$'Auto-Taxi',2)
+Dci$'Auto-TaxiPoints' <- Point(Dci$'Auto-Taxi',2)
 
 #Auto-LowScored#
 Dci$'Auto-LowScored#' <- NumArray(7,2)
@@ -156,7 +216,7 @@ Dci$'Auto-LowMissed#' <- NumArray(32, 2)
 Dci$'Auto-LowAccuracy' <- CargoAccuracy(Dci$'Auto-LowScored#',Dci$'Auto-LowMissed#')
 
 #Auto-LowPoint
-Dci$'Auto-LowPoint' <- Point(Dci$'Auto-LowScored#',2)
+Dci$'Auto-LowPoints' <- Point(Dci$'Auto-LowScored#',2)
 
 #Auto-HighScored#
 Dci$'Auto-HighScored#' <- NumArray(57,2)
@@ -168,16 +228,16 @@ Dci$'Auto-HighMissed#' <- NumArray(82,2)
 Dci$'Auto-HighAccuracy' <- CargoAccuracy(Dci$'Auto-HighScored#',Dci$'Auto-HighMissed#')
 
 #Auto-HighPoint
-Dci$'Auto-HighPoint' <- Point(Dci$'Auto-HighScored#',4)
+Dci$'Auto-HighPoints' <- Point(Dci$'Auto-HighScored#',4)
 
 #Auto-TotalCargo#
 Dci$'Auto-TotalCargo#' <- Dci$'Auto-LowScored#' + Dci$'Auto-HighScored#'
 
 #Auto-CargoPoint
-Dci$'Auto-CargoPoint' <- Dci$'Auto-LowPoint' + Dci$'Auto-HighPoint'
+Dci$'Auto-CargoPoints' <- Dci$'Auto-LowPoints' + Dci$'Auto-HighPoints'
 
 #Auto-TotalPoint
-Dci$'Auto-TotalPoint' <- Dci$'Auto-TaxiPoint' + Dci$'Auto-LowPoint' + Dci$'Auto-HighPoint'
+Dci$'Auto-TotalPoints' <- Dci$'Auto-TaxiPoints' + Dci$'Auto-LowPoints' + Dci$'Auto-HighPoints'
 
 #Tele-LowScored#
 Dci$'Tele-LowScored#' <- NumArray(13,4)
@@ -189,25 +249,28 @@ Dci$'Tele-LowMissed#' <- NumArray(38,4)
 Dci$'Tele-LowAccuracy' <- CargoAccuracy(Dci$'Tele-LowScored#',Dci$'Tele-LowMissed#')
 
 #Tele-LowScore
-Dci$'Tele-LowPoint' <- Point(Dci$'Tele-LowScored#', 1)
+Dci$'Tele-LowPoints' <- Point(Dci$'Tele-LowScored#', 1)
 
 #Tele-HighScored#
 Dci$'Tele-HighScored#' <- NumArray(63,4)
 
 #Tele-HighMissed#
-Dci$'#Tele-HighMissed#' <- NumArray(88,4)
+Dci$'Tele-HighMissed#' <- NumArray(88,4)
+
+#Tele-HighAccuracy
+Dci$'Tele-HighAccuracy' <- CargoAccuracy(Dci$'Tele-HighScored#',Dci$'Tele-HighMissed#')
 
 #Tele-HighPoint
-Dci$'Tele-HighPoint' <- Point(Dci$'Tele-HighScored#', 2)
+Dci$'Tele-HighPoints' <- Point(Dci$'Tele-HighScored#', 2)
 
 #Tele-TotalCargo#
 Dci$'Tele-TotalCargo#' <- Dci$'Tele-LowScored#' + Dci$'Tele-HighScored#'
 
 #Tele-CargoScore
-Dci$'Tele-CargoScore' <- Dci$'Tele-LowPoint' + Dci$'Tele-HighPoint'
+Dci$'Tele-CargoPoints' <- Dci$'Tele-LowPoints' + Dci$'Tele-HighPoints'
 
 #Tele-TotalScore
-Dci$'Tele-TotalScore' <- Dci$'Tele-LowPoint' + Dci$'Tele-HighPoint'
+Dci$'Tele-TotalPoints' <- Dci$'Tele-LowPoints' + Dci$'Tele-HighPoints'
 
 #EG-Climb1Attempt
 Dci$'EG-Climb1Attempt' <- Bubble(19, "3") + Bubble(19, "4") + Bubble(19, "5")
@@ -276,7 +339,7 @@ Dci$'EG-ClimbSetUpTime' <- ifelse(grepl(1, RawData[[44]]), NA, NumArray(44,4))
 Dci$'EG-ClimbAscendTime' <- ifelse(grepl(1, RawData[[69]]), NA, NumArray(69,4))
 
 #EG-TotalScore
-Dci$'EG-TotalScore' <- Dci$'EG-Climb1Scored' + Dci$'EG-Climb2Scored' + Dci$'EG-Climb3Scored' + Dci$'EG-Climb4Scored'
+Dci$'EG-TotalPoints' <- Dci$'EG-Climb1Scored'*4 + Dci$'EG-Climb2Scored'*6 + Dci$'EG-Climb3Scored'*10 + Dci$'EG-Climb4Scored'*15
 
 #Total-LowCargo
 Dci$'Total-LowCargo' <- Dci$'Auto-LowScored#'+ Dci$'Tele-LowScored#'
@@ -288,16 +351,16 @@ Dci$'Total-HighCargo#' <- Dci$'Auto-HighScored#'+ Dci$'Tele-HighScored#'
 Dci$'Total-Cargo#' <- Dci$'Auto-TotalCargo#'+ Dci$'Tele-TotalCargo#'
 
 #Total-LowCargoScore
-Dci$'Total-LowCargoScore' <- Dci$'Auto-LowPoint'+ Dci$'Tele-LowPoint'
+Dci$'Total-LowCargoPoints' <- Dci$'Auto-LowPoints'+ Dci$'Tele-LowPoints'
 
 #Total-HighCargoScore
-Dci$'Total-HighCargoScore' <- Dci$'Auto-HighPoint'+ Dci$'Tele-HighPoint'
+Dci$'Total-HighCargoPoints' <- Dci$'Auto-HighPoints'+ Dci$'Tele-HighPoints'
 
 #Total-CargoScore
-Dci$'Total-CargoScore' <- Dci$'Total-LowCargoScore'+ Dci$'Total-HighCargoScore'
+Dci$'Total-CargoPoints' <- Dci$'Total-LowCargoPoints'+ Dci$'Total-HighCargoPoints'
 
 #Total-Score
-Dci$'Total-Score' <- Dci$'Auto-TotalPoint'+ Dci$'Tele-TotalScore'+ Dci$'EG-TotalScore'
+Dci$'Total-Points' <- Dci$'Auto-TotalPoints'+ Dci$'Tele-TotalPoints'+ Dci$'EG-TotalPoints'
 
 #RI-Defense
 Dci$'RI-Defense' <- ifelse(grepl("3", RawData[[25]]), 0, 
@@ -306,8 +369,8 @@ Dci$'RI-Defense' <- ifelse(grepl("3", RawData[[25]]), 0,
 #RI-Foul
 Dci$'RI-Foul' <- Bubble(50, 3)
 
-#RI-Tech+BX1Foul
-Dci$'RI-Tech+BX1Foul' <- Bubble(50, 5)
+#RI-'TechFoul'
+Dci$'RI-TechFoul' <- Bubble(50, 5)
 
 #RI-NoShow
 Dci$'RI-NoShow' <- Bubble(75, 3)
@@ -322,7 +385,7 @@ Dci$'RI-Dead' <- Bubble(75, 5)
 Dci$'RI-Feedback' <- Bubble(75, 5)
 
 #Output
-write.csv(Dci,"TEST.csv",row.names = FALSE)
+write.csv(Dci,"DCI Data.csv",row.names = FALSE)
 
 
 

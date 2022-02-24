@@ -1,0 +1,421 @@
+"address","city","country","gmaps_place_id","gmaps_url","key","lat","lng","location_name","motto","name","nickname","postal_code","rookie_year","school_name","state_prov","team_number","website"
+NA,"Hartland","USA",NA,NA,"frc8002",NA,NA,NA,NA,"John Deere/Rockwell Automation/NASA/General Electric/Mathison Manufacturing/Schneider Electric/Eaton/Milwaukee Tool/Stepcraft/Lake Country School&Lake Country School","The Knack","53029",2020,"Lake Country School","Wisconsin",8002,"https://knackrobotics.weebly.com/"
+NA,"Pine Bush","USA",NA,NA,"frc8003",NA,NA,NA,NA,"Pine Bush High School","Bushmen Robotics","12566",2020,"Pine Bush High School","New York",8003,NA
+NA,"Waynesville","USA",NA,NA,"frc8004",NA,NA,NA,NA,"S.A.M.E. Society of American Military Engineers/EDGE Educating our Digital Generation Effectively / Department of Defense Education Activity (DoDEA) &Waynesville High School","Tigris ex Machina","65583",2020,"Waynesville High School","Missouri",8004,NA
+NA,"Las Vegas","USA",NA,NA,"frc8005",NA,NA,NA,NA,"Gene Haas Foundation&Meadows School","Mega MeadowBots","89128",2020,"Meadows School","Nevada",8005,NA
+NA,"Los Angeles","USA",NA,NA,"frc8006",NA,NA,NA,NA,"Cathedral High School, general fund/Alumni Association, Cathedral High School/Richard M. Heredia/Meggitt/JMT Fabrication&Cathedral High School","The Phantoms, from Cathedral High School","90012",2020,"Cathedral High School","California",8006,"https://www.cathedralhighschool.org"
+NA,"Rochester","USA",NA,NA,"frc8007",NA,NA,NA,NA,"Rochester  City Schools","Hold Team 1","14614",2020,"Rochester  City Schools","New York",8007,NA
+NA,"Guangzhou","China",NA,NA,"frc8011",NA,NA,NA,NA,"Family/Community","Guangzhou Wayi","510000",2020,"Family/Community","Guangdong",8011,NA
+NA,"Mesa","USA",NA,NA,"frc8012",NA,NA,NA,NA,"Mesa Public Schools&Red Mountain High School","APEX Robotics","85207",2020,"Red Mountain High School","Arizona",8012,"http://www.mpsaz.org/rmhs/organizations/rmrobotics"
+NA,"Boston","USA",NA,NA,"frc8013",NA,NA,NA,NA,"Family/Community","Boston Lions","02116",2020,"Family/Community","Massachusetts",8013,NA
+NA,"Aurora","USA",NA,NA,"frc8014",NA,NA,NA,NA,"NASA/Motorola Solution Foundation&Family/Community","Fortitude Robotics","60502",2020,"Family/Community","Illinois",8014,"https://sites.google.com/view/fortitude-robotics/home"
+NA,"Shanghai","China",NA,NA,"frc8015",NA,NA,NA,NA,"Shanghai Qibao Dwight High School","The Cheetahs","201101",2020,"Shanghai Qibao Dwight High School","Shanghai",8015,NA
+NA,"Rohnert Park","USA",NA,NA,"frc8016",NA,NA,NA,NA,"NASA/Apple/Google/FIRST Equity and Access&Credo High School","Eco Robotics","94928",2020,"Credo High School","California",8016,"https://www.ecorobotics8016.org/"
+NA,"taichung","Chinese Taipei",NA,NA,"frc8017",NA,NA,NA,NA,"GOOGLE&Family/Community","SCREW IT!!","40864",2020,"Family/Community","Changhua",8017,NA
+NA,"Las Vegas","USA",NA,NA,"frc8018",NA,NA,NA,NA,"TESLA/Gene Haas Foundation&Del Sol High Acad Perf Arts","Del Sol Dragons","89120",2020,"Del Sol High Acad Perf Arts","Nevada",8018,NA
+NA,"Mission","USA",NA,NA,"frc8019",NA,NA,NA,NA,"Veterans Memorial High School","Patriot Engineering","78574",2020,"Veterans Memorial High School","Texas",8019,NA
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8020",NA,NA,NA,NA,"Dell Technologies/TECHMAN Robot&Taipei Municipal Jianguo High School","Cyberpunk","10066",2020,"Taipei Municipal Jianguo High School","Taipei Special Municipality",8020,"http://www.facebook.com/frc8020"
+NA,"Surprise","USA",NA,NA,"frc8021",NA,NA,NA,NA,"NASA/AZFirst/Steve Sanghi Family Foundation/James A Unruh Family Foundation/LAUNCH TEAM Robotics&Paradise Honors High School","Panther Robotics","85388",2020,"Paradise Honors High School","Arizona",8021,NA
+NA,"Las Vegas","USA",NA,NA,"frc8022",NA,NA,NA,NA,"NASA/TESLA/Gene Haas Foundation&Northwest Career & Tech Acad","Raging Hawk Robotics","89143",2020,"Northwest Career & Tech Acad","Nevada",8022,NA
+NA,"Lewiston","USA",NA,NA,"frc8023",NA,NA,NA,NA,"Lewiston Regional Technical Center/FIRST Robotics/Robotics Institute of Maine/Bates College/CS for LPS&Lewiston Reg Tech Center","LRTC 8023 ","04240",2020,"Lewiston Reg Tech Center","Maine",8023,"https://sites.google.com/view/lrtc-firstrobotics/meet-8023"
+NA,"Sparta","USA",NA,NA,"frc8024",NA,NA,NA,NA,"Spartek Inc./Mathy Construction Co./Ashley Furniture&Sparta High School","Sparta Robotans","54656",2020,"Sparta High School","Wisconsin",8024,NA
+NA,"Kapolei","USA",NA,NA,"frc8025",NA,NA,NA,NA,"NASA&Island Pacific Academy","Navigator Robotics ","96707",2020,"Island Pacific Academy","Hawaii",8025,"https://www.Navigatorrobotics.com"
+NA,"Murfreesboro","USA",NA,NA,"frc8026",NA,NA,NA,NA,"NASA/Schneider Electric & Tennessee Robotics Club","Tennessee Robotics Club","37127",2020,"Tennessee Robotics Club","Tennessee",8026,"https://www.tennesseeroboticsclub.org/"
+NA,"Sharon","USA",NA,NA,"frc8027",NA,NA,NA,NA,"Penn State Shenango/Amazon/NASA/DoD STEM/Bayer Fund/Intuitive Foundation/EV3Lessons/PrimeLessons/StreamYard&Family/Community","Not the Droids You Are Looking For","16146",2020,"Family/Community","Pennsylvania",8027,"http://www.droidsrobotics.org"
+NA,"Phoenix","USA",NA,NA,"frc8028",NA,NA,NA,NA,"Alhambra High School","The Resistance Network","85019",2020,"Alhambra High School","Arizona",8028,"https://alhambrarobotics.com/"
+NA,"Barrington","USA",NA,NA,"frc8029",NA,NA,NA,NA,"NASA/TRUMPF/Mhub Chicago&Family/Community","Steel Bronco Robotics","60010",2020,"Family/Community","Illinois",8029,"https://steelbroncorobotics.com"
+NA,"Denver","USA",NA,NA,"frc8030",NA,NA,NA,NA,"East Lincoln High School","East lincoln Iron stangs","28037",2020,"East Lincoln High School","North Carolina",8030,NA
+NA,"Muratpaşa","Turkey",NA,NA,"frc8031",NA,NA,NA,NA,"Antalya Lara Bahçeşehir Anatolian High School","Luminous","07230",2020,"Antalya Lara Bahçeşehir Anatolian High School","Antalya",8031,"http://www.luminousteam.com/"
+NA,"Seattle","USA",NA,NA,"frc8032",NA,NA,NA,NA,"Seattle Acad of Arts & Science","Redshift","98122",2020,"Seattle Acad of Arts & Science","Washington",8032,NA
+NA,"Piedmont","USA",NA,NA,"frc8033",NA,NA,NA,NA,"Zenni Optical/NASA/Google/Piedmont Makers/Solidworks&Family/Community","Highlander Robotics","94611",2020,"Family/Community","California",8033,"https://www.frc8033.com"
+NA,"Bornova","Turkey",NA,NA,"frc8034",NA,NA,NA,NA,"Cevdet İnci Eğitim Vakfı/E.C.A./FIRST/Fikret Yüksel Foundation/Purplebox/Şimşekler Genel Kumanyacılık ve Dış Tic.San. A.Ş.&Özel Bornova Sevinç Anatolian High School&İzmir Atatürk Lisesi","Butterfly Effect","35050",2020,"İzmir Atatürk Lisesi & Özel Bornova Sevinç Anatolian High School","Izmir",8034,NA
+NA,"Perth","Australia",NA,NA,"frc8035",NA,NA,NA,NA,"University of Western Australia","Potential Failures","6009",2020,"University of Western Australia","Western Australia",8035,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8036",NA,NA,NA,NA,"Family/Community","Sneaky Snakes","34000",2018,"Family/Community","Istanbul",8036,NA
+NA,"Van Wert","USA",NA,NA,"frc8037",NA,NA,NA,NA,"NASA/Alliance Automation/Central Insurance Companies/Van Wert County Foundation/1st Federal of Van Wert/Vancrest Health Care Centers/Van Wert Federal/Wal-Mart/Tenneco/University of Northwestern Ohio (UNOH)/Citizens National Bank/Statewide Ford/Vantage Career Center&Van Wert High School","VW Cougar Robotics","45891",2020,"Van Wert High School","Ohio",8037,"https://sites.google.com/site/vanwertrobotics/"
+NA,"Bristow","USA",NA,NA,"frc8038",NA,NA,NA,NA,"DOD/NASA/Muscogee (Creek) Nation/Iron Eagle &Bristow High School","R.O.B. (Robots Outta Bristow)","74010",2020,"Bristow High School","Oklahoma",8038,NA
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8039",NA,NA,NA,NA,"Family/Community & Taipei Municipal Da-An Vocational High School","ArtisanSoul","114",2020,"Taipei Municipal Da-An Vocational High School & Family/Community","Taipei",8039,NA
+NA,"TRABZON","Turkey",NA,NA,"frc8040",NA,NA,NA,NA,"T.C. İçişleri Bakanlığı/Denizer Balıkçılık/Bakkalım A.Ş./Kebir Süt/Eroğlu Çarşı/Şerbet Gıda/Axis Reklamcılık & Family/Community","ZODIAC","61100",2020,"Family/Community","Trabzon",8040,"http://bkzodiac.com"
+NA,"Lake City","USA",NA,NA,"frc8041",NA,NA,NA,NA,"2020 Argosy Foundation New Team Growth Grant /Aurora Patents /Toyota  &Lake City High School","Lake City Ultrabots","49651",2020,"Lake City High School","Michigan",8041,NA
+NA,"ANTALYA","Turkey",NA,NA,"frc8042",NA,NA,NA,NA,"UĞUR OKULLARI ÇALLI","Fenrir","67300",2020,"UĞUR OKULLARI ÇALLI","Antalya",8042,NA
+NA,"Tulsa","USA",NA,NA,"frc8043",NA,NA,NA,NA,"Kamen STEM /Stanfield + O'Dell/NASA&Kamen STEM","Neon Ryders","74112",2020,"Kamen STEM","Oklahoma",8043,"http://107.221.181.242:8000/first-robotics.html"
+NA,"Denham Springs","USA",NA,NA,"frc8044",NA,NA,NA,NA,"The Dow Chemical Company/NASA & Denham Springs High School & Denham Springs High School STEM and Robotics Center","Denham Venom","70726",2020,"Denham Springs High School STEM and Robotics Center & Denham Springs High School","Louisiana",8044,"https://www.facebook.com/denhamvenom"
+NA,"Castro Valley","USA",NA,NA,"frc8045",NA,NA,NA,NA,"OSIsoft&Castro Valley High School","CVHS First Robotics: The Wallace Dynasty","94546",2020,"Castro Valley High School","California",8045,NA
+NA,"Meredith","USA",NA,NA,"frc8046",NA,NA,NA,NA,"Meredith Village Savings Bank/NH DOE/Remcon - North&Inter-Lakes Jr Sr High School","LakerBots","03253",2020,"Inter-Lakes Jr Sr High School","New Hampshire",8046,NA
+NA,"kartal","Turkey",NA,NA,"frc8047",NA,NA,NA,NA,"BOSCH&YAKACIK MESLEKi VE TEKNiK ANADOLU LiSESi","YAKACIK ROBOTICS","34876",2020,"YAKACIK MESLEKi VE TEKNiK ANADOLU LiSESi","Istanbul",8047,NA
+NA,"East Palo Alto","USA",NA,NA,"frc8048",NA,NA,NA,NA,"Google/Team 1868 Space Cookies/Olark/Auris&Bayshore Christian Ministries","East Palo Alto Robotics, ""The Churrobots""","94303",2020,"Bayshore Christian Ministries","California",8048,NA
+NA,"Oro Valley","USA",NA,NA,"frc8049",NA,NA,NA,NA,"Delio Orthodontics/Bayer Fund/NASA/FIRST Robotics/Amphitheater School District&Ironwood Ridge High School","Ironwood Ridge Robotics","85742",2020,"Ironwood Ridge High School","Arizona",8049,NA
+NA,"Ball Ground","USA",NA,NA,"frc8050",NA,NA,NA,NA,"Family/Community","Nova Robotics","30107",2020,"Family/Community","Georgia",8050,NA
+NA,"Tukwila","USA",NA,NA,"frc8051",NA,NA,NA,NA,"Foster High School","TinkRex","98168",2020,"Foster High School","Washington",8051,NA
+NA,"Toronto","Canada",NA,NA,"frc8052",NA,NA,NA,NA,"Zesoo Construction Services&Family/Community","Water Bears","M6R 2V5",2020,"Family/Community","Ontario",8052,NA
+NA,"San Antonio","USA",NA,NA,"frc8053",NA,NA,NA,NA,"Texas Workforce Commission/Northern Oaks Bird & Animal Hospital/H-E-B Tournament Of Champions/2020 Argosy Foundation New Team Growth Grant/Systems Engaged IT Services/Robert Walker/Porter Family/Kyle and Stacey Dicke /Panera Bread/Sam's Club Warehouse/Grimaldi's Pizzeria/Starbuck's Coffee&Family/Community","Rage Against the Machine Robotics","78261",2020,"Family/Community","Texas",8053,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8054",NA,NA,NA,NA,"FMV Erenköy Işık Private High School and Science School","FLARE","34738",2020,"FMV Erenköy Işık Private High School and Science School","Istanbul",8054,NA
+NA,"Frisco","USA",NA,NA,"frc8055",NA,NA,NA,NA,"Family/Community","EGM Robotics","75035",2020,"Family/Community","Texas",8055,NA
+NA,"Gaziemir","Turkey",NA,NA,"frc8056",NA,NA,NA,NA,"Enstitü 4.1","ENSİA Youth - Laissez Faire","35600",2020,"Enstitü 4.1","Izmir",8056,"https://laissezfairefrc.com/"
+NA,"Groveland","USA",NA,NA,"frc8057",NA,NA,NA,NA,"The City of Groveland/Edge United Methodist Church/Mom's Guide to Robotics/NASA/Anthem, Inc/Walt Disney Parks and Resorts/Link Printing & Family/Community & Mom's Guide to Robotics & Home School","All Wired Up","34736",2020,"Home School & Mom's Guide to Robotics & Family/Community","Florida",8057,"https://team8057.com/"
+NA,"İSTANBUL","Turkey",NA,NA,"frc8058",NA,NA,NA,NA,"ISTANBUL ERKEK LISESI","IEL ROBOTICS","34093",2020,"ISTANBUL ERKEK LISESI","Istanbul",8058,"https://www.ielrobotics.com"
+NA,"Sammamish","USA",NA,NA,"frc8059",NA,NA,NA,NA,"Eastside Catholic High School","Robotics at Eastside Catholic (REC)","98074",2020,"Eastside Catholic High School","Washington",8059,NA
+NA,"Valencia","USA",NA,NA,"frc8060",NA,NA,NA,NA,"Valencia High School","Command B","91355",2020,"Valencia High School","California",8060,NA
+NA,"Hamilton","USA",NA,NA,"frc8061",NA,NA,NA,NA,"Butler Tech","Butler Tech Robotics","45011",2020,"Butler Tech","Ohio",8061,"http://www.butlertech.org"
+NA,"Tulsa","USA",NA,NA,"frc8062",NA,NA,NA,NA,"Hale High School","O Hale Gnaw","74129",2020,"Hale High School","Oklahoma",8062,NA
+NA,"Drumright","USA",NA,NA,"frc8063",NA,NA,NA,NA,"Drumright High School&Drumright High School","Tornado Robotics","74030",2020,"Drumright High School","Oklahoma",8063,NA
+NA,"Drumright","USA",NA,NA,"frc8064",NA,NA,NA,NA,"Olive High School","Imperial Watch","74030",2020,"Olive High School","Oklahoma",8064,NA
+NA,"Wagoner","USA",NA,NA,"frc8065",NA,NA,NA,NA,"Wagoner High School","Robarks","74467",2020,"Wagoner High School","Oklahoma",8065,NA
+NA,"Lorena","Brazil",NA,NA,"frc8066",NA,NA,NA,NA,"VALGROUP/NOVELIS/PRATT WITCHINEY&EE Arnolfo Azevedo","WOLF ARMY ROBOTICS","12609-166",2020,"EE Arnolfo Azevedo","São Paulo",8066,"https://wolfarmyrobotics.com.br"
+NA,"Longueuil","Canada",NA,NA,"frc8067",NA,NA,NA,NA,"Pratt & Whitney Canada/United Technologies/Akilon Technologies/RONA Ferronnerie A. Leduc/Botaris/Fondation Le Chapeau&Collège Notre-Dame-de-Lourdes","Alpha Lab","J4P 3G5",2020,"Collège Notre-Dame-de-Lourdes","Québec",8067,"https://alphalab8067.ndl.qc.ca"
+NA,"Waterford","USA",NA,NA,"frc8068",NA,NA,NA,NA,"Kawasaki Robotics (USA), Inc./Clarkston Auto Body and Towing/PushCorp, Inc./Comcast/Delaney, Root & Associates, PC/Hirotec America/Northern Controls Group, Inc./Toyota FIRST Team Grant/2020 Argosy Foundation New Team Growth Grant/In memory of Bill ""Papa"" Green&Oakland Alliance 4-H Club","Oakland Underground Robotics","48328",2020,"Oakland Alliance 4-H Club","Michigan",8068,"https://ourfrc.com"
+NA,"Saint Charles","USA",NA,NA,"frc8069",NA,NA,NA,NA,"NASA/Bayer/Craftsmen Industries&Super Hornets Robotics","Super Hornets","63301",2020,"Super Hornets Robotics","Missouri",8069,"http://superhornets.org"
+NA,"Kadıköy","Turkey",NA,NA,"frc8070",NA,NA,NA,NA,"3M/Fikret Yüksel Foundation/Kuzey Mekanik Makine Kalıp Aparat Sanayi ve Dış Ticaret LTD. ŞTİ ( Onur Yiğit Eken )&KADIKÖY GÖZTEPE MESLEKİ VE TEKNİK ANADOLU LİSESİ","CyberGriffins","34720",2020,"KADIKÖY GÖZTEPE MESLEKİ VE TEKNİK ANADOLU LİSESİ","Istanbul",8070,NA
+NA,"Mersin","Turkey",NA,NA,"frc8071",NA,NA,NA,NA,"Özel Şişecam Mesleki Ve Teknik Anadolu Lisesi","R3-D3 Mersin ","33080",2020,"Özel Şişecam Mesleki Ve Teknik Anadolu Lisesi","Mersin",8071,NA
+NA,"Ottawa","Canada",NA,NA,"frc8072",NA,NA,NA,NA,"Woodroffe High School","Tech Tigers","K2B7M8",2020,"Woodroffe High School","Ontario",8072,"https://sites.google.com/ocdsb.ca/whs-techno-tigers/home"
+NA,"Ottawa","Canada",NA,NA,"frc8073",NA,NA,NA,NA,"Carleton University Faculty of Engineering and Design&Blyth Academy Ottawa","Electron Affinity","K2A 0E2",2020,"Blyth Academy Ottawa","Ontario",8073,NA
+NA,"Wewoka","USA",NA,NA,"frc8074",NA,NA,NA,NA,"Wewoka High School","Rumble Bots","74884",2020,"Wewoka High School","Oklahoma",8074,NA
+NA,"Dover","USA",NA,NA,"frc8075",NA,NA,NA,NA,"Dover High School","CyberTigers","07801",2020,"Dover High School","New Jersey",8075,NA
+NA,"Leesburg","USA",NA,NA,"frc8076",NA,NA,NA,NA,"Academies of Loudoun","Academy of Loudoun High School - Team Robo Loco # 5338","20175",2020,"Academies of Loudoun","Virginia",8076,"https://www.roboloco.org"
+NA,"Saint Louis","USA",NA,NA,"frc8077",NA,NA,NA,NA,"The Magic House St. Louis Children's Museum/James and Judy Seeser/Watlow Electric/NASA/Boeing/Bayer/SLSRA/Siemens/John Henry Foster/Optimist Club of Clayton&Family/Community","Delmar Robotics Engineers At MADE","63108",2020,"Family/Community","Missouri",8077,"http://www.slsra.org/dream"
+NA,"Menemen","Turkey",NA,NA,"frc8078",NA,NA,NA,NA,"IZMIR GELISIM COLLEGE","G FORCE","35663",2020,"IZMIR GELISIM COLLEGE","Izmir",8078,NA
+NA,"CADDEBOSTAN","Turkey",NA,NA,"frc8079",NA,NA,NA,NA,"YAPI MERKEZİ/INDOOR LIFE/ABB/US POLO ASSN./FORA TURIZM/OK HIRDAVAT&IRMAK OKULLARI","River Robotics Team","34728",2020,"IRMAK OKULLARI","Istanbul",8079,NA
+NA,"Canton","USA",NA,NA,"frc8080",NA,NA,NA,NA,"NASA/Sequoyah High School/Culver's Hickory Flat/Hickory Flat Orthodontics&Sequoyah High School","Sequoyah Robotics","30115",2020,"Sequoyah High School","Georgia",8080,NA
+NA,"Leamington","Canada",NA,NA,"frc8081",NA,NA,NA,NA,"PrimeVine Produce/FCA Canada/Uni-fab/Caxton Mark/First New Team Growth Grant/First Canada Grant/Nature Fresh Farms/Canada EDI Argosy Grant/Great Lakes Greenhouses/Speedy Glass/UE Enclosures/Bartel Machine and Welding/University of Windsor - Faculty of Science/St. Clair College/Schartner Construction/LSI Supply Inc/Electric Wholesale Supply/Highline Mushrooms/Naples Pizza/Fittler Farms&UMEI","UMEI Lightning Robotics","N8H 3V8",2020,"UMEI","Ontario",8081,"https://umeilightningrobot.wixsite.com/christianhighschool"
+NA,"Surrey","Canada",NA,NA,"frc8082",NA,NA,NA,NA,"The Argosy Foundation/Motorola Solutions/Honda Canada Association/Earl Marriott Secondary School PAC&Earl Marriott Secondary","Tech-Mates","V4A1S1",2020,"Earl Marriott Secondary","British Columbia",8082,NA
+NA,"Douglasville","USA",NA,NA,"frc8083",NA,NA,NA,NA,"Google/Nasa/PrintPack/Rhino Mechanical/Delta Community Credit Union&Alexander High School","ALX Robotics","30135",2020,"Alexander High School","Georgia",8083,NA
+NA,"ümraniye","Turkey",NA,NA,"frc8084",NA,NA,NA,NA,"NETEX TEKNOLOJİ ÜRÜNLERİ A.Ş./ISTANBUL TICARET BORSASI&ÜMRANİYE ATATÜRK MESLEKİ VE TEKNİK ANADOLU LİSESİ","ALFA ROBOTICS","34773",2020,"ÜMRANİYE ATATÜRK MESLEKİ VE TEKNİK ANADOLU LİSESİ","Istanbul",8084,NA
+NA,"Milford","USA",NA,NA,"frc8085",NA,NA,NA,NA,"Technology Associates/Lockheed Martin - Sikorsky/Otis Elevator/Stanley Black and Decker&Jonathan Law High School&Joseph a Foran High School&Family/Community","MOJO","06460",2020,"Family/Community & Joseph a Foran High School & Jonathan Law High School","Connecticut",8085,"https://www.milfordedfoundation.org/milford-robotics-mr"
+NA,"Anadarko","USA",NA,NA,"frc8086",NA,NA,NA,NA,"Anadarko High School","AnadarKODERS","73005",2020,"Anadarko High School","Oklahoma",8086,NA
+NA,"Show Low","USA",NA,NA,"frc8087",NA,NA,NA,NA,"Show Low High School","Cougar Pride Robotics","85901",2020,"Show Low High School","Arizona",8087,NA
+NA,"Liberty Hill","USA",NA,NA,"frc8088",NA,NA,NA,NA,"Texas Workforce Commission/Nasa/Rev Robotics/Inventables/Swyft Robotics/RoboPromo/Digi-Key/Abbott&Liberty Hill High School","Bionic Panthers","78642",2020,"Liberty Hill High School","Texas",8088,NA
+NA,"Kitchener","Canada",NA,NA,"frc8089",NA,NA,NA,NA,"Rockway Mennonite Collegiate","Rockway Robotics","N2G 3C8",2020,"Rockway Mennonite Collegiate","Ontario",8089,NA
+NA,"Roxboro","USA",NA,NA,"frc8090",NA,NA,NA,NA,"Person Early Clg Innov & Ldrsp","Mavnesium","27573",2020,"Person Early Clg Innov & Ldrsp","North Carolina",8090,NA
+NA,"Castroville","USA",NA,NA,"frc8091",NA,NA,NA,NA,"North Monterey Co High School","The Condors","95012",2020,"North Monterey Co High School","California",8091,NA
+NA,"Tekirdağ","Turkey",NA,NA,"frc8092",NA,NA,NA,NA,"BSH Turkey/Kodluyoruz Association & Çerkezköy Halit Narin Mesleki ve Teknik Anadolu Lisesi & Veliköy Organize Sanayi Bölgesi Mesleki ve Teknik Anadolu Lisesi","Greatest Of All Times","59000",2020,"Veliköy Organize Sanayi Bölgesi Mesleki ve Teknik Anadolu Lisesi & Çerkezköy Halit Narin Mesleki ve Teknik Anadolu Lisesi","Tekirdag",8092,NA
+NA,"Spencerport","USA",NA,NA,"frc8093",NA,NA,NA,NA,"Spencerport High School","Ranger Force","14559",2020,"Spencerport High School","New York",8093,NA
+NA,"Statesboro","USA",NA,NA,"frc8094",NA,NA,NA,NA,"Color Technologies inc/Pineland Telephone inc/NeSmith Construction inc/Howard Lumbar Company inc/Whitfield Signs inc/Crider Poultry inc/Wall Orthodontist /East Georgia Regional Medical Center/Christopher Merrill Construction&Bulloch Academy&Southeast Bulloch High School&Trinity Christian School&Statesboro High School","Back Road Robotics ","30458",2020,"Statesboro High School & Southeast Bulloch High School & Trinity Christian School & Bulloch Academy","Georgia",8094,NA
+NA,"ORDU","Turkey",NA,NA,"frc8095",NA,NA,NA,NA,"Özler Dizel Şirketler Grubu & Ordu Türkiye Odalar ve Borsalar Birliği Mesleki ve Teknik Anadolu Lisesi","ORDU TOBB MESLEKİ VE TEKNİK ANADOLU LİSESİ","52100",2020,"Ordu Türkiye Odalar ve Borsalar Birliği Mesleki ve Teknik Anadolu Lisesi","Ordu",8095,"http://ordueml.meb.k12.tr/"
+NA,"Chicago","USA",NA,NA,"frc8096",NA,NA,NA,NA,"&Univ of Chicago Lab School","Cache Money","60637",2020,"Univ of Chicago Lab School","Illinois",8096,NA
+NA,"Durham","USA",NA,NA,"frc8097",NA,NA,NA,NA,"Family/Community","AREA 27","27708",2020,"Family/Community","North Carolina",8097,"https://area27.org/"
+NA,"Willis","USA",NA,NA,"frc8098",NA,NA,NA,NA,"Texas Workforce Commission/NASA/The Evans, Weaver, Ehlert, and Rogers Families&Willis High School","Wildkat Robotiks FRC","77378",2020,"Willis High School","Texas",8098,"https://www.willisisd.org/Page/2135"
+NA,"TRABZON","Turkey",NA,NA,"frc8099",NA,NA,NA,NA,"Özel Trabzon Bahçeşehir Lisesi","APEIRON ROBOTICS","61100",2020,"Özel Trabzon Bahçeşehir Lisesi","Trabzon",8099,"https://www.instagram.com/bkapeiron/?igshid=1tvkr4xiokfhv"
+NA,"Grayson","USA",NA,NA,"frc8100",NA,NA,NA,NA,"Gwinnett County Public Schools&Grayson High School","Grayson Robotics","30017",2020,"Grayson High School","Georgia",8100,NA
+NA,"Beijing","China",NA,NA,"frc8101",NA,NA,NA,NA,"Family/Community","Coo-Coo Pigeons","100000",2020,"Family/Community","Beijing",8101,NA
+NA,"Wayne","USA",NA,NA,"frc8102",NA,NA,NA,NA,"Diane C Lobosco STEM Academy","NAMETBD-DCLSTEM","07470",2020,"Diane C Lobosco STEM Academy","New Jersey",8102,NA
+NA,"Kendallville","USA",NA,NA,"frc8103",NA,NA,NA,NA,"East Noble High School","East Noble High School","46755",2020,"East Noble High School","Indiana",8103,NA
+NA,"Jupiter","USA",NA,NA,"frc8104",NA,NA,NA,NA,"Family/Community","Squid Worx Robotics","33458",2020,"Family/Community","Florida",8104,NA
+NA,"Torreón","Mexico",NA,NA,"frc8105",NA,NA,NA,NA,"PEÑOLES&Instituto Tecnológico de La Laguna","PEÑOLES - Apollo Black Cat ","27000",2020,"Instituto Tecnológico de La Laguna","Coahuila",8105,NA
+NA,"North York","Canada",NA,NA,"frc8106",NA,NA,NA,NA,"Toronto French School","Toronto French School","M4N 1T7",2020,"Toronto French School","Ontario",8106,NA
+NA,"Torrington","USA",NA,NA,"frc8107",NA,NA,NA,NA,"Northwestern Connecticut Community College/RoBrand Product, Inc./United Technologies/Northwest Connecticut Community Foundation/NAPA Connecticut&Torrington High School","THS Robotics","06790",2020,"Torrington High School","Connecticut",8107,NA
+NA,"Abingdon","USA",NA,NA,"frc8108",NA,NA,NA,NA,"Washington Co Cte Ctr","Fantastic4Robotics","24210",2020,"Washington Co Cte Ctr","Virginia",8108,NA
+NA,"San Jose","USA",NA,NA,"frc8109",NA,NA,NA,NA,"NASA&Piedmont Hills High School","Pirate Robotics","95127",2020,"Piedmont Hills High School","California",8109,NA
+NA,"Beijing","China",NA,NA,"frc8110",NA,NA,NA,NA,"Family/Community","Sugared Knights","100029",2020,"Family/Community","Beijing",8110,NA
+NA,"Beijing","China",NA,NA,"frc8111",NA,NA,NA,NA,"Family/Community & Family/Community","Whiter Tiger","100029",2020,"Family/Community & Family/Community","Beijing",8111,NA
+NA,"Ottawa","USA",NA,NA,"frc8112",NA,NA,NA,NA,"NASA/American Eagle Outfitters/John and Amanda Stinebaugh/Ottawa High School/Southern Star Pipeline/Booster Club&Ottawa High School","Cyclotrons","66067",2020,"Ottawa High School","Kansas",8112,NA
+NA,"Sarnia","Canada",NA,NA,"frc8113",NA,NA,NA,NA,"Argosy Foundation New Team Growth Grant/Lakeside Process Controls/RBC Wealth Management PH&N Investment Counsel/FIRST Canada/Sarnia Awesome Foundation/ISA Sarnia-Lambton/DJT Consulting/Professional Engineers of Ontario Sarnia Lambton /Langtree Controls/Lambton Scientific/Field Farms Marketing/Needham Spine Centre/WeeWatch Home Child Care&Royal Thunder Robotics","Royal Thunder Robotics","N7S 6L4",2020,"Royal Thunder Robotics","Ontario",8113,NA
+NA,"Boerne","USA",NA,NA,"frc8114",NA,NA,NA,NA,"Lowe's/Boerne Independent School District/Albany Engineered Composites/Racer Classic Car Wash/JET Specialty, Inc/5-Mouth Cave Ranch/Ancira of Boerne/210 Homebuyers/Snowflake Donuts/Boerne Infinity/Sonora Bank/Great Clips/Redberry Realty Team/CuStumm Designs & Tees (In Kind/Product)/Bluebonnet Realty/KM Builders/Westward Environmental/Nissan of Boerne/On The Move/Edward Patrick/Joe Gonzalez, CPA/Brandon Wheeler&Champion High School&Boerne High School","Rocketeers","78006",2020,"Champion High School & Boerne High School","Texas",8114,NA
+NA,"Chesterfield","USA",NA,NA,"frc8115",NA,NA,NA,NA,"Austin Catholic High School","Platinum Peacocks","48051",2020,"Austin Catholic High School","Michigan",8115,"https://platinumpeacocksrobotics.weebly.com"
+NA,"Washington","USA",NA,NA,"frc8116",NA,NA,NA,NA,"Toyota&Washington High School","Hatchet Robotics","47501",2020,"Washington High School","Indiana",8116,NA
+NA,"Easton","USA",NA,NA,"frc8117",NA,NA,NA,NA,"Easton Area High School","RoboRovers","18045",2020,"Easton Area High School","Pennsylvania",8117,"http://www.frc8117.com"
+NA,"Covington","USA",NA,NA,"frc8118",NA,NA,NA,NA,"NASA/Laitram&Christ Episcopal School","Gearing With Grace","70433",2020,"Christ Episcopal School","Louisiana",8118,NA
+NA,"Imperial","USA",NA,NA,"frc8119",NA,NA,NA,NA,"Imperial High School","TigerBotics","92251",2020,"Imperial High School","California",8119,NA
+NA,"North York","Canada",NA,NA,"frc8120",NA,NA,NA,NA,"YORK MEMORIAL COLLEGIATE INSTITUTE","YORK MEMORIAL JAEGERS","M2N 7H1",2020,"YORK MEMORIAL COLLEGIATE INSTITUTE","Ontario",8120,NA
+NA,"Tainan","Chinese Taipei",NA,NA,"frc8121",NA,NA,NA,NA,"Zebra Technologies/Metal Industries Research & Development Center/National Yunlin University of Science and Technology/Chia Nan University of Pharmacy ＆ Science/Diageo&National Bei-men Senior High School","I.C.R.T.","72242",2020,"National Bei-men Senior High School","Tainan Municipality",8121,"https://www.instagram.com/_icrt_8121/?hl=zh-tw"
+NA,"Chicago","USA",NA,NA,"frc8122",NA,NA,NA,NA,"NASA/Littelfuse/Google&Taft High School","Robotic Eagles ","60631",2020,"Taft High School","Illinois",8122,NA
+NA,"Brownsville","USA",NA,NA,"frc8123",NA,NA,NA,NA,"James Pace Early Clg HS","Pace Enginerds","78521",2020,"James Pace Early Clg HS","Texas",8123,NA
+NA,"Wyandotte","USA",NA,NA,"frc8124",NA,NA,NA,NA,"NASA /Ford Motor Company/Granader Family Restaurants/Robert DeSana/Argosy Foundation/Magna/Wyandotte Public Schools &Roosevelt High School","BearBots","48192",2020,"Roosevelt High School","Michigan",8124,NA
+NA,"Fatih","Turkey",NA,NA,"frc8125",NA,NA,NA,NA,"CEMBERLITAS HIGH SCHOOL","Artnox Robotic","34130",2020,"CEMBERLITAS HIGH SCHOOL","Istanbul",8125,"https://www.instagram.com/artnoxrobotic/"
+NA,"Vicksburg","USA",NA,NA,"frc8126",NA,NA,NA,NA,"NASA&Vicksburg High School","Control Freaks","49097",2020,"Vicksburg High School","Michigan",8126,"https://1259893.wixsite.com/controlfreaksrobots"
+NA,"Warsaw","Poland",NA,NA,"frc8127",NA,NA,NA,NA,"Polish Development Fund Foundation/Eurocash Group/Grodno SA/Somfy/Grosley/SATA/Thales/Korbo/Plast Service Pack/C&R Auditors/XXVII Tadeusz Czacki High School in Warsaw/Warsaw University of Technology&Family/Community","Team RaByte","00-625",2020,"Family/Community","",8127,"https://rabyte.pl"
+NA,"Reno","USA",NA,NA,"frc8128",NA,NA,NA,NA,"Tesla&Academy for Career Education","ACE INNOVATORS","89502",2020,"Academy for Career Education","Nevada",8128,"http://www.acehighschool.org"
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8129",NA,NA,NA,NA,"Taipei Municipal Zhong-zheng Senior High School","ZZRT","11287",2020,"Taipei Municipal Zhong-zheng Senior High School","Taipei Special Municipality",8129,"https://www.instagram.com/frc_8129_dusk/"
+NA,"Absecon","USA",NA,NA,"frc8130",NA,NA,NA,NA,"Absegami High School","Fundamentals","08205",2020,"Absegami High School","New Jersey",8130,NA
+NA,"Samsun","Turkey",NA,NA,"frc8131",NA,NA,NA,NA,"ÖZEL SAMSUN BAHÇEŞEHİR KOLEJİ ATAKUM FEN VE TEKNOLOJİ LİSESİ","Magnetech Vega","55200",2020,"ÖZEL SAMSUN BAHÇEŞEHİR KOLEJİ ATAKUM FEN VE TEKNOLOJİ LİSESİ","Samsun",8131,NA
+NA,"La Malbaie","Canada",NA,NA,"frc8132",NA,NA,NA,NA,"Simard Suspensions Inc/Produits forestiers Résolu - Usine Clermont/Cs Charlevoix/Développement Social Intégré Charlevoix/Club Optimiste de Charlevoix-Est/Industries Océan Inc./Caisse Desjardins Charlevoix-Est&Ecole secondaire du Plateau","Sysmik","G5A 1T3",2020,"Ecole secondaire du Plateau","Québec",8132,NA
+NA,"Jeannette","USA",NA,NA,"frc8133",NA,NA,NA,NA,"Jeannette Jr Sr High School","JayBots","15644",2020,"Jeannette Jr Sr High School","Pennsylvania",8133,NA
+NA,"Boca Raton","USA",NA,NA,"frc8134",NA,NA,NA,NA,"Pope John Paul Ii High School","SJP Eagle Botz","33431",2020,"Pope John Paul Ii High School","Florida",8134,NA
+NA,"Santa Ana","USA",NA,NA,"frc8135",NA,NA,NA,NA,"Medtronic Neurovascular HLN&Legacy College Prep","Legacy Robotics","92703",2020,"Legacy College Prep","California",8135,NA
+NA,"Teyateyaneng","Lesotho",NA,NA,"frc8136",NA,NA,NA,NA,"STEAMLes Robotics","STEAMLes","200",2020,"STEAMLes Robotics","Berea",8136,NA
+NA,"Georgetown","USA",NA,NA,"frc8137",NA,NA,NA,NA,"Georgetown County School District/Fastenal/SafeRack/AA Low Country LLC&Georgetown High School","Byting Bulldogs","29440",2020,"Georgetown High School","South Carolina",8137,NA
+NA,"Tacoma","USA",NA,NA,"frc8138",NA,NA,NA,NA,"Lincoln High School & Mt Tahoma High School & Upward Bound","SpicyBots","98418",2020,"Upward Bound & Mt Tahoma High School & Lincoln High School","Washington",8138,NA
+NA,"Egg Harbor City","USA",NA,NA,"frc8139",NA,NA,NA,NA,"NASA/Greater Egg Harbor Regional High School District/Argosy Foundation & Cedar Creek High School","Pirate Robotics","08215",2020,"Cedar Creek High School","New Jersey",8139,"https://www.gehrhsd.net/cedarcreekhs"
+NA,"Cleveland","USA",NA,NA,"frc8140",NA,NA,NA,NA,"NASA Glenn Research Center's Office of STEM Engagement/FIRST/The George Gund Foundation/Cleveland Metropolitan School District/The Great Lakes Science Center&Mc2 STEM Hs-Grt Lakes Sci Ctr","RoboManiacs","44114",2020,"Mc2 STEM Hs-Grt Lakes Sci Ctr","Ohio",8140,"https://www.mc2stemhighschool.org"
+NA,"Tripoli","Libya",NA,NA,"frc8141",NA,NA,NA,NA,"Family/Community","LYBOTICS Girls Team","NONE",2020,"Family/Community","Tarabulus",8141,"https://www.lybotics.com"
+NA,"Riverside","USA",NA,NA,"frc8142",NA,NA,NA,NA,"Hillcrest High School","The Legion","92503",2020,"Hillcrest High School","California",8142,"http://www.legionoftroy.com"
+NA,"Istanbul","Turkey",NA,NA,"frc8143",NA,NA,NA,NA,"KAGITHANE COZUM KOLEJI ANADOLU FEN LISESI","SOLUTION TURK","34408",2020,"KAGITHANE COZUM KOLEJI ANADOLU FEN LISESI","Istanbul",8143,NA
+NA,"Cypress","USA",NA,NA,"frc8144",NA,NA,NA,NA,"Cypress Springs High School","Red Chair Robotics","77433",2020,"Cypress Springs High School","Texas",8144,NA
+NA,"Cleveland","USA",NA,NA,"frc8145",NA,NA,NA,NA,"NASA/The George Gund Foundation/Rockwell Automation/FIRST/Cleveland Metropolitan School District/Great Lakes Science Center & East Technical High School","Tech Warriors","44104",2020,"East Technical High School","Ohio",8145,NA
+NA,"Ankara","Turkey",NA,NA,"frc8146",NA,NA,NA,NA,"OSTİM Technical University/OSTIM Organize Sanayi Bölgesi/Design Makina Mühendislik/Hızal Elektrik Mühendislik/Exentech Exclusive Engineering/Inventro Engineering/Alpgen Robotics/İkmal Endüstriyel Yapı Market/WeDo Robotics/ATO/NovaDraft&Family/Community","Albatros OSTIMTECH","06830",2020,"Family/Community","Ankara",8146,"http://robotum.net"
+NA,"BEYLİKDÜZÜ / İstanbul","Turkey",NA,NA,"frc8147",NA,NA,NA,NA,"Modern Eğitim Koleji","Ekinoks","34520",2020,"Modern Eğitim Koleji","Istanbul",8147,"https://sites.google.com/view/ekinoks-robotik"
+NA,"El Paso","USA",NA,NA,"frc8148",NA,NA,NA,NA,"Riverside High School","QUANTUM RANGERS","79915",2020,"Riverside High School","Texas",8148,NA
+NA,"Afyonkarahısar","Turkey",NA,NA,"frc8149",NA,NA,NA,NA,"Family/Community","RoboTesla","03030",2020,"Family/Community","Afyonkarahisar",8149,NA
+NA,"Houston","USA",NA,NA,"frc8150",NA,NA,NA,NA,"Texas Workforce Commission/FRC Team 5414-Pearadox/FRC Team 3847-Spectrum/Westside High School- HISD&Westside High School","Tungsten","77077",2020,"Westside High School","Texas",8150,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8151",NA,NA,NA,NA,"Burcak Eyuboglu Science and Technology High School","WildFire","34762",2020,"Burcak Eyuboglu Science and Technology High School","Istanbul",8151,NA
+NA,"Saint-Charles-de-Bellechasse","Canada",NA,NA,"frc8152",NA,NA,NA,NA,"Fondation J.A. Bombardier/École secondaire de Saint-Charles (CSS de la Côte-du-Sud)/Boeing/Hydro-Québec&École secondaire de Saint-Charles","Escouade","G0R 2T0",2020,"École secondaire de Saint-Charles","Québec",8152,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8153",NA,NA,NA,NA,"Ford Otosan/Fikret Yüksel Foundation/Mentors Network Turkey/Patreon (Donations from Individuals through our Patreon Account)/Seem Türkiye/Enka/Renault Turkey/Türk Traktör&Aci High School","Tech 4 Peace","34473",2020,"Aci High School","Istanbul",8153,"https://hsrobotics.acischools.k12.tr/"
+NA,"Aiyansh","Canada",NA,NA,"frc8154",NA,NA,NA,NA,"Nisg̱a’a Elementary-Secondary School ","Gibuu","V0J 1A0",2020,"Nisg̱a’a Elementary-Secondary School ","British Columbia",8154,NA
+NA,"Antakya","Turkey",NA,NA,"frc8155",NA,NA,NA,NA,"Hatay Bahçeşehir Koleji Anadolu Lisesi","Uranos","31030 ",2020,"Hatay Bahçeşehir Koleji Anadolu Lisesi","Hatay",8155,NA
+NA,"İstanbul","Turkey",NA,NA,"frc8156",NA,NA,NA,NA,"50. Yıl Cumhuriyet Feridun Tümer MTAL","Khalkedon TEAM","34728",2020,"50. Yıl Cumhuriyet Feridun Tümer MTAL","Istanbul",8156,NA
+NA,"Richland","USA",NA,NA,"frc8157",NA,NA,NA,NA,"St Augustine Preparatory Sch","St. Augustine Prep","08350",2020,"St Augustine Preparatory Sch","New Jersey",8157,NA
+NA,"Beşiktaş","Turkey",NA,NA,"frc8158",NA,NA,NA,NA,"beşiktaş anadolu lisesi","Bosphorus Robotics","34353",2020,"beşiktaş anadolu lisesi","Istanbul",8158,"http://team8158.com/"
+NA,"Ataşehir","Turkey",NA,NA,"frc8159",NA,NA,NA,NA,"Jr.Robotics/Mustafa Enver Adakan Foundation/NETAŞ/Arkel/Enocta/Temsa/Eylül Tekstil/AVC Basım ve Ambalaj/Hedef İnşaat&Family/Community","Golden Horn","34750",2020,"Family/Community","Istanbul",8159,"https://www.teamgoldenhorn.com"
+NA,"Matteson","USA",NA,NA,"frc8160",NA,NA,NA,NA,"Rich East Campus High School & Rich Central Campus High Sch & Rich South Campus High School","Oly Rock Stars","60443",2020,"Rich South Campus High School & Rich East Campus High School & Rich Central Campus High Sch","Illinois",8160,NA
+NA,"Chihuahua","Mexico",NA,NA,"frc8161",NA,NA,NA,NA,"Family/Community","Chihuahuas Robotics Team","31100",2020,"Family/Community","Chihuahua",8161,"https://www.facebook.com/Chihuahuas-Robotics-Team-118997172816541/"
+NA,"istanbul","Turkey",NA,NA,"frc8162",NA,NA,NA,NA,"pendik fatih anadolu lisesi","FaTech","34893",2020,"pendik fatih anadolu lisesi","Istanbul",8162,NA
+NA,"Zhenjiang","China",NA,NA,"frc8163",NA,NA,NA,NA,"Zhenjiang  First Foreign  Language  School","Phoenix","212000",2020,"Zhenjiang  First Foreign  Language  School","Jiangsu",8163,NA
+NA,"Foshan","China",NA,NA,"frc8164",NA,NA,NA,NA,"FOSHAN HUAYING SCHOOL","RADIUM","528000",2020,"FOSHAN HUAYING SCHOOL","Guangdong",8164,NA
+NA,"Seattle","USA",NA,NA,"frc8165",NA,NA,NA,NA,"Family/Community","Bahlam Bots","98144",2020,"Family/Community","Washington",8165,NA
+NA,"Pendik","Turkey",NA,NA,"frc8166",NA,NA,NA,NA,"&Intechne","INTECHNE","34890",2020,"Intechne","Istanbul",8166,"https://intechnerobotics.com"
+NA,"Durham","USA",NA,NA,"frc8167",NA,NA,NA,NA,"NASA/Lockheed Martin/Merwin Foundation/Eversource/Connect Electric/Durham Manufacturing/Grippo's Exxon Mobile&Coginchaug Reg High School","Cognatives","06422",2020,"Coginchaug Reg High School","Connecticut",8167,NA
+NA,"Rochester","USA",NA,NA,"frc8168",NA,NA,NA,NA,"Northeast College Prep HS","Northeast","14609",2020,"Northeast College Prep HS","New York",8168,NA
+NA,"Kangshan","Chinese Taipei",NA,NA,"frc8169",NA,NA,NA,NA,"National Kangshan Senior High School","Kangshan Super Steel Robot","820",2020,"National Kangshan Senior High School","Kaohsiung Special Municipality",8169,"https://www.kssh.khc.edu.tw/p/405-1000-6505,c220.php?Lang=zh-tw"
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8170",NA,NA,NA,NA,"The Affiliated Senior High School of National Taiwan Normal University","Fi-Lab","106",2020,"The Affiliated Senior High School of National Taiwan Normal University","Taipei",8170,"https://www.facebook.com/hsnufablab/"
+NA,"Shanghai","China",NA,NA,"frc8171",NA,NA,NA,NA,"Family/Community","RL Robotics","200240",2020,"Family/Community","Shanghai",8171,NA
+NA,"Shenzhen","China",NA,NA,"frc8172",NA,NA,NA,NA,"Sendelta International Academy","Celestial Shadow","518000",2020,"Sendelta International Academy","Guangdong",8172,NA
+NA,"Brighton","United Kingdom",NA,NA,"frc8173",NA,NA,NA,NA,"Brighton College","Brighton College","BN2 0AL",2020,"Brighton College","England",8173,"http://www.brightoncollege.net"
+NA,"Salt Lake City","USA",NA,NA,"frc8174",NA,NA,NA,NA,"Olympus High School","Titan Robotics","84124",2020,"Olympus High School","Utah",8174,NA
+NA,"Emek Yizrael","Israel",NA,NA,"frc8175",NA,NA,NA,NA,"Family/Community","Piece of Mind","3659000",2020,"Family/Community","HaZafon",8175,NA
+NA,"Douliu City","Chinese Taipei",NA,NA,"frc8176",NA,NA,NA,NA,"Sacred Hearts High School","Alien Robotics","640",2020,"Sacred Hearts High School","Yunlin",8176,NA
+NA,"Tomball","USA",NA,NA,"frc8177",NA,NA,NA,NA,"Chuck Lorre Family Foundation/NBC Universal/FIRST/First in Texas/Texas Workforce Commission/Laird Plastics & Tomball Memorial High School","Vector","77377",2020,"Tomball Memorial High School","Texas",8177,"http://www.vector8177.com/"
+NA,"tainan city","Chinese Taipei",NA,NA,"frc8178",NA,NA,NA,NA,"Shan-hua senior highschool ","Sky Honor","741",2020,"Shan-hua senior highschool","Tainan Municipality",8178,"https://reurl.cc/4gaOLv"
+NA,"Dearborn","USA",NA,NA,"frc8179",NA,NA,NA,NA,"Ford Motor Company/Sonic EDM/Argosy Foundation/Toyota&Divine Child High School","Robo Falcons","48124",2020,"Divine Child High School","Michigan",8179,NA
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8180",NA,NA,NA,NA,"Fubon Cultural & Educational Foundation&Family/Community","ChainsMaker","110",2020,"Family/Community","Taipei",8180,NA
+NA,"Başakşehir","Turkey",NA,NA,"frc8181",NA,NA,NA,NA,"Başakşehir Bilim ve Sanat Merkezi","Bilsem Robotics","34480",2020,"Başakşehir Bilim ve Sanat Merkezi","Istanbul",8181,NA
+NA,"Beşiktaş","Turkey",NA,NA,"frc8182",NA,NA,NA,NA,"Sakıp Sabancı Anatolian High School","Loth Robotics","34349",2020,"Sakıp Sabancı Anatolian High School","Istanbul",8182,NA
+NA,"shanghai","China",NA,NA,"frc8183",NA,NA,NA,NA,"SHANGHAI DAZHONG TECHNICAL SCHOOL","WAO","201800",2020,"SHANGHAI DAZHONG TECHNICAL SCHOOL","Shanghai",8183,NA
+NA,"Silivri","Turkey",NA,NA,"frc8184",NA,NA,NA,NA,"Prof Dr. Fuat Sezgin Fen Lisesi","ROBOTTACK","34590",2020,"Prof Dr. Fuat Sezgin Fen Lisesi","Istanbul",8184,NA
+NA,"NANJING","China",NA,NA,"frc8185",NA,NA,NA,NA,"NANJING NO.29 HIGH SCHOOL","Blue Sky Eagle","210036",2020,"NANJING NO.29 HIGH SCHOOL","Jiangsu",8185,NA
+NA,"Belle Glade","USA",NA,NA,"frc8186",NA,NA,NA,NA,"Boys & Girls Clubs of America","Belle Glade Boys & Girls Club","33430",2020,"Boys & Girls Clubs of America","Florida",8186,NA
+NA,"Kyiv","Ukraine",NA,NA,"frc8187",NA,NA,NA,NA,"CyberPunks","CyberPunks","03506",2020,"CyberPunks","Kyïv",8187,NA
+NA,"Grand Forks","USA",NA,NA,"frc8188",NA,NA,NA,NA,"Dakota Science Center/ND Space Grant Consortium/NASA/Argosy Foundation&Family/Community","Grand Force","58201",2020,"Family/Community","North Dakota",8188,NA
+NA,"Shanghai","China",NA,NA,"frc8189",NA,NA,NA,NA,"Family/Community","SubCat Academy ","201210",2020,"Family/Community","Shanghai",8189,NA
+NA,"İstanbul","Turkey",NA,NA,"frc8190",NA,NA,NA,NA,"İSOV-DİNÇKÖK Mesleki Teknik Anadolu Lisesi","İsov Robotic Team","34000",2020,"İSOV-DİNÇKÖK Mesleki Teknik Anadolu Lisesi","Istanbul",8190,NA
+NA,"Waterford","Barbados",NA,NA,"frc8191",NA,NA,NA,NA,"Family/Community & The Combermere School","Barbados Robotics Team","BB",2020,"The Combermere School","Saint Michael",8191,NA
+NA,"Muratpaşa","Turkey",NA,NA,"frc8192",NA,NA,NA,NA,"Antalya Lara Bahçeşehir Anatolian High School","Luminous","07230",2020,"Antalya Lara Bahçeşehir Anatolian High School","Antalya",8192,NA
+NA,"New Lothrop","USA",NA,NA,"frc8193",NA,NA,NA,NA,"Wheeler Trucking/Chem Trend/Bossman Construction/Toyota/Fullerton Tool/Auto Tech /4 Wheel Buy/Resourceful Recycling/Theresa Obrien/Brian & Sharon Beauchamp/New Lothrop Insurance/Focal Revolution Unmanned Aerial Systems/P & K Customs&New Lothrop Jr Sr High School","The Steel Stingers","48460",2020,"New Lothrop Jr Sr High School","Michigan",8193,NA
+NA,"Ventura","USA",NA,NA,"frc8194",NA,NA,NA,NA,"NAVFAC EXWC&Buena High School","Robo Bulls","93001",2020,"Buena High School","California",8194,NA
+NA,"Ventura","USA",NA,NA,"frc8195",NA,NA,NA,NA,"NAVFAC EXWC&Buena High School","Bullbots","93001",2020,"Buena High School","California",8195,NA
+NA,"Lanham","USA",NA,NA,"frc8197",NA,NA,NA,NA,"Memtors Advancing STEAM Education and Research Inc./MSBR/SpectraCU/Washington Academy of Sciences/Sigma Xi&Duval High School","AirTigers8197","20706",2020,"Duval High School","Maryland",8197,"http://www.airtigers.org"
+NA,"Mobile","USA",NA,NA,"frc8198",NA,NA,NA,NA,"Baker High School","Baker Hornets","36608",2020,"Baker High School","Alabama",8198,NA
+NA,"Düzce","Turkey",NA,NA,"frc8200",NA,NA,NA,NA,"DÜZCE MEHMET AKİF İNAN HAFIZ ANADOLU İHL","ANATOLIAN BEES","81010",2020,"DÜZCE MEHMET AKİF İNAN HAFIZ ANADOLU İHL","Düzce",8200,"https://www.anatolianbees.org"
+NA,"Rancho Cucamonga","USA",NA,NA,"frc8202",NA,NA,NA,NA,"Los Osos High School","BeAr","91737",2020,"Los Osos High School","California",8202,"https://lohsrobotics.weebly.com"
+NA,"ISTANBUL","Turkey",NA,NA,"frc8203",NA,NA,NA,NA,"İSTANBUL / ÜSKÜDAR - ARAŞTIRMA GELİŞTİRME EĞİTİM VE UYGULAMA MERKEZİ LİSESİ","ROBARGEM","034347",2020,"İSTANBUL / ÜSKÜDAR - ARAŞTIRMA GELİŞTİRME EĞİTİM VE UYGULAMA MERKEZİ LİSESİ","Istanbul",8203,NA
+NA,"Beijing","China",NA,NA,"frc8204",NA,NA,NA,NA,"Keystone Academy","Keystone Robotics","100000",2020,"Keystone Academy","Beijing",8204,NA
+NA,"Wilmington","USA",NA,NA,"frc8205",NA,NA,NA,NA,"Cape Fear Academy","Mind Over Metal","28412",2020,"Cape Fear Academy","North Carolina",8205,"https://www.CFArobotics.com"
+NA,"newdelhi","India",NA,NA,"frc8206",NA,NA,NA,NA,"Family/Community","Team NeXT","110048",2020,"Family/Community","Delhi",8206,NA
+NA,"Izmir","Turkey",NA,NA,"frc8207",NA,NA,NA,NA,"İzmir Atatürk Lisesi","Orenda","35220",2020,"İzmir Atatürk Lisesi","Izmir",8207,"http://izmirataturklisesi.meb.k12.tr/"
+NA,"İstanbul","Turkey",NA,NA,"frc8208",NA,NA,NA,NA,"Sabancı Foundation&Özdemir Sabancı Emirgan Anadolu Lisesi","SYCAMORE","34467",2020,"Özdemir Sabancı Emirgan Anadolu Lisesi","Istanbul",8208,"http://frcteam8208.com/"
+NA,"İstanbul","Turkey",NA,NA,"frc8209",NA,NA,NA,NA,"LIGHTHOUSE Worldwide Solutions/Doğuş Kalıp/KINAY Logistics/AVEMARIS Logistics/ER-CAN DEMİR LTD. ŞTİ./Tokyay ve Tokyay Teknoloji&Özel Sezin Okulu","SEZMECH","34782",2020,"Özel Sezin Okulu","Istanbul",8209,"http://www.sezmech.com"
+NA,"Houston","USA",NA,NA,"frc8210",NA,NA,NA,NA,"Texas Workforce Commission & Waltrip High School","Rambotics Inc.","77018",2020,"Waltrip High School","Texas",8210,NA
+NA,"Port Hueneme CBC Base","USA",NA,NA,"frc8211",NA,NA,NA,NA,"NAVFAC EXWC&Nordhoff High School","Ranger Robots ","93043",2020,"Nordhoff High School","California",8211,NA
+NA,"Port Hueneme CBC Base","USA",NA,NA,"frc8212",NA,NA,NA,NA,"NAVFAC EXWC & Foothill Tech High School","Dragon Effect","93043",2020,"Foothill Tech High School","California",8212,"https://sites.google.com/venturaedu.org/fthsrobotics/home"
+NA,"Monterey","USA",NA,NA,"frc8213",NA,NA,NA,NA,"Trinity Christian High School","Trinity Christian High School","93940",2020,"Trinity Christian High School","California",8213,"https://www.trinityhigh.org"
+NA,"Shenzhen","China",NA,NA,"frc8214",NA,NA,NA,NA,"Next Innovation STEM center&Family/Community","Cyber Unicorn","518038",2020,"Family/Community","Guangdong",8214,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8215",NA,NA,NA,NA,"Jr.Robotics&JUNIOR ROBOTICS","High Five","34779",2020,"JUNIOR ROBOTICS","Istanbul",8215,NA
+NA,"Austin","USA",NA,NA,"frc8216",NA,NA,NA,NA,"John B Connally High School","Vision Robotics","78753",2020,"John B Connally High School","Texas",8216,NA
+NA,"Arlington","USA",NA,NA,"frc8217",NA,NA,NA,NA,"Washington-Liberty High School (formerly named Washington-Lee High School)","Generals Robotics","22204",2020,"Washington-Liberty High School (formerly named Washington-Lee High School)","Virginia",8217,"http://www.generalsrobotics.com"
+NA,"Düsseldorf","Germany",NA,NA,"frc8218",NA,NA,NA,NA,"Luisen-Gymnasium Düsseldorf","German Engineering","40213",2020,"Luisen-Gymnasium Düsseldorf","Nordrhein-Westfalen",8218,NA
+NA,"Sofia","Bulgaria",NA,NA,"frc8219",NA,NA,NA,NA,"TUES","BG Robotics","1172",2020,"TUES","Sofia-Grad",8219,NA
+NA,"Yenişehir","Turkey",NA,NA,"frc8220",NA,NA,NA,NA,"UĞUR OKULLARI&MERSİN UĞUR OKULLARI","Space Tigers","33220",2020,"MERSİN UĞUR OKULLARI","Mersin",8220,NA
+NA,"eskisehir","Turkey",NA,NA,"frc8221",NA,NA,NA,NA,"TED ESKİŞEHİR KOLEJİ","TEDES","26100",2020,"TED ESKİŞEHİR KOLEJİ","Eskisehir",8221,"https://www.tedeskisehir.k12.tr"
+NA,"Cleveland","USA",NA,NA,"frc8222",NA,NA,NA,NA,"The George Gund Foundation/NASA Glenn Research Center – Office of STEM Engagement/FIRST/Cleveland Metropolitan School District/Great Lakes Science Center&Davis Aerospace & Maritime HS","Robo-Aviators","44114",2020,"Davis Aerospace & Maritime HS","Ohio",8222,"https://www.davisam.org"
+NA,"Tel Aviv","Israel",NA,NA,"frc8223",NA,NA,NA,NA,"Ironi H","Mariners","6350220",2020,"Ironi H","Tel-Aviv",8223,NA
+NA,"Saint-Laurent","Canada",NA,NA,"frc8224",NA,NA,NA,NA,"Vanguard","Vanguard Robotics ","H4T 1C3",2020,"Vanguard","Québec",8224,NA
+NA,"Cleveland","USA",NA,NA,"frc8225",NA,NA,NA,NA,"Campus International Sch North","Circuit Blazers","44114",2020,"Campus International Sch North","Ohio",8225,"https://www.clevelandmetroschools.org/CIHS"
+NA,"Tainan","Chinese Taipei",NA,NA,"frc8226",NA,NA,NA,NA,"non&Maritime Fisheries Vocational School","Hope","70841",2020,"Maritime Fisheries Vocational School","Changhua",8226,NA
+NA,"Oakland","USA",NA,NA,"frc8229",NA,NA,NA,NA,"Metwest High School","Pollobots","94606",2020,"Metwest High School","California",8229,NA
+NA,"Arlington","USA",NA,NA,"frc8230",NA,NA,NA,NA,"Arlington Career Center","KoiBots #8230","22204",2020,"Arlington Career Center","Virginia",8230,NA
+NA,"Kawasaki-city","Japan",NA,NA,"frc8231",NA,NA,NA,NA,"Family/Community","BWW","214-0038",2020,"Family/Community","Kanagawa",8231,"https://sites.google.com/view/frc-bww/"
+NA,"Lafayette","USA",NA,NA,"frc8232",NA,NA,NA,NA,"Caterpillar Inc./Indiana Kentucky Ohio Regional Council of Carpenters Joint Apprenticeship/IBEW-NECA Electrical Training Alliance/IN-MaC/Tipmont REMC/Schweitzer Engineering Laboratories/Greater Lafayette Commerce/GLGraphix&Family/Community","Girl Gang","47905",2020,"Family/Community","Indiana",8232,"https://www.frcgirlgang.com/"
+NA,"New Braunfels","USA",NA,NA,"frc8233",NA,NA,NA,NA,"Canyon High School","Robo-Riff-Raff","78130",2020,"Canyon High School","Texas",8233,NA
+NA,"Minneapolis","USA",NA,NA,"frc8234",NA,NA,NA,NA,"Spring Lake Park High School","Panthinators","55432",2020,"Spring Lake Park High School","Minnesota",8234,NA
+NA,"SINGAPORE","Singapore",NA,NA,"frc8235",NA,NA,NA,NA,"NPS International School","Beyond the Flames","469021",2020,"NPS International School","South East",8235,"https://frcbeyondtheflames.wixsite.com/8235"
+NA,"Montreal","Canada",NA,NA,"frc8236",NA,NA,NA,NA,"Syndicat Étudiant du Cégep Marie-Victorin (SECMV)&Cégep Marie- Victorin","Ecobotic","H1G 2J6",2020,"Cégep Marie- Victorin","Québec",8236,"https://www.ecobotic8236.com/"
+NA,"Eskişehir","Turkey",NA,NA,"frc8237",NA,NA,NA,NA,"ATATURK TECHNICAL AND VOCATIONAL HIGH SCHOOL","ESATA","26020",2020,"ATATURK TECHNICAL AND VOCATIONAL HIGH SCHOOL","Eskisehir",8237,NA
+NA,"Odunpazarı","Turkey",NA,NA,"frc8238",NA,NA,NA,NA,"ATATURK TECHNICAL AND VOCATIONAL HIGH SCHOOL","ESES","26020",2020,"","Eskisehir",8238,NA
+NA,"MALTEPE","Turkey",NA,NA,"frc8239",NA,NA,NA,NA,"HANDAN HAYRETTİN YELKİKANAT MESLEKİ VE TEKNİK ANADOLU LİSESİ","INTERNATIONAL YELKIKANAT ROBOT COMMUNITY","34852",2020,"HANDAN HAYRETTİN YELKİKANAT MESLEKİ VE TEKNİK ANADOLU LİSESİ","Istanbul",8239,NA
+NA,"İstanbul","Turkey",NA,NA,"frc8240",NA,NA,NA,NA,"E.DOYUR/ARGOS BİLİŞİM/Repkon Makina ve Kalıp San. ve Tic. A.Ş.&DOKTOR VASIF TOPÇU FEN LİSESİ","Atatürk Robotics","34980",2020,"DOKTOR VASIF TOPÇU FEN LİSESİ","Istanbul",8240,NA
+NA,"New York","USA",NA,NA,"frc8241",NA,NA,NA,NA,"National Aeronautics and Space Administration&Manhattan Ctr Science & Math","Iron Ram","10029",2020,"Manhattan Ctr Science & Math","New York",8241,NA
+NA,"Niğde","Turkey",NA,NA,"frc8242",NA,NA,NA,NA,"Peros Deterjan(Beyaz Kağıt A.Ş.)/Niğde Belediye Başkanlığı/Modeka Mobilya/NİĞCAM/Turcanlar Tekstil&Niğde Fen Lisesi","Tekno NFL","51100",2020,"Niğde Fen Lisesi","Nigde",8242,NA
+NA,"Cleveland","USA",NA,NA,"frc8243",NA,NA,NA,NA,"The George Gund Foundation/NASA Glenn Research Center's Office of STEM Engagement/FIRST/Cleveland Metropolitan School District/Great Lakes Science Center&John Marshall-Info Tech","AstroCircuits","44111",2020,"John Marshall-Info Tech","Ohio",8243,"https://www.clevelandmetroschools.org/johnmarshallit"
+NA,"Tecámac","Mexico",NA,NA,"frc8244",NA,NA,NA,NA,"CBT No. 2 Lic. Carlos Pichardo , Tecámac","Delfines CBTech","55744",2020,"CBT No. 2 Lic. Carlos Pichardo , Tecámac","Mexico",8244,NA
+NA,"Erdek","Turkey",NA,NA,"frc8245",NA,NA,NA,NA,"Erdek Anadolu Lisesi","ROBEAL","10500",2020,"Erdek Anadolu Lisesi","Balikesir",8245,NA
+NA,"Sakarya ","Turkey",NA,NA,"frc8246",NA,NA,NA,NA,"Sakarya Cevat Ayhan Science School","Tuku","54100",2020,"Sakarya Cevat Ayhan Science School","Sakarya",8246,NA
+NA,"Grandview","USA",NA,NA,"frc8247",NA,NA,NA,NA,"Grandview High School","Grandview Ze-Bots","76050",2020,"Grandview High School","Texas",8247,NA
+NA,"Seattle","USA",NA,NA,"frc8248",NA,NA,NA,NA,"Amazon/Argosy Foundation New Team Growth Grant&Lincoln High School","ChainLynx","98103",2020,"Lincoln High School","Washington",8248,"http://chainlynx8248.org"
+NA,"Shanghai","China",NA,NA,"frc8249",NA,NA,NA,NA,"Shanghai American School - Puxi","Jinfeng Dynamics","201107",2020,"Shanghai American School - Puxi","Shanghai",8249,NA
+NA,"Littleton","USA",NA,NA,"frc8250",NA,NA,NA,NA,"NASA/Lockheed Martin/Comcast/Click Bond&Columbine Senior High School","Rebel Robotics","80123",2020,"Columbine Senior High School","Colorado",8250,NA
+NA,"guangzhou ","China",NA,NA,"frc8251",NA,NA,NA,NA,"Guangzhou Baiyun Experimental School","White cloud","510000",2020,"Guangzhou Baiyun Experimental School","Guangdong",8251,NA
+NA,"foushan","China",NA,NA,"frc8252",NA,NA,NA,NA,"佛山市诺德安达学校","Blue sword","528211",2020,"佛山市诺德安达学校","Guangdong",8252,NA
+NA,"guangzhou","China",NA,NA,"frc8253",NA,NA,NA,NA,"华南师范大学附属外国语学校","Kapok","510620 ",2020,"华南师范大学附属外国语学校","Guangdong",8253,NA
+NA,"Beyoğlu","Turkey",NA,NA,"frc8254",NA,NA,NA,NA,"Beyoğlu Anadolu İmam-Hatip Lisesi","BEY-TEK","34055",2020,"Beyoğlu Anadolu İmam-Hatip Lisesi","Istanbul",8254,NA
+NA,"Rolla","USA",NA,NA,"frc8255",NA,NA,NA,NA,"Mt Pleasant School","Robodogs","58367",2020,"Mt Pleasant School","North Dakota",8255,NA
+NA,"Alvarado","Mexico",NA,NA,"frc8256",NA,NA,NA,NA,"Universidad Tecmilenio","Tecmilenio - ARMY ROBOT TECHNOLOGY","95263",2020,"Universidad Tecmilenio","Veracruz",8256,NA
+NA,"Bronx","USA",NA,NA,"frc8257",NA,NA,NA,NA,"School for Excellence & Bronx International High Sch & High School for Violin & Dance","Zombie Apocalypse Counter Task Force","10456",2000,"High School for Violin & Dance & Bronx International High Sch & School for Excellence","New York",8257,NA
+NA,"Toronto","Canada",NA,NA,"frc8258",NA,NA,NA,NA,"École secondaire Toronto Ouest ","Les dragons ","M6H 3Y1 ",2020,"École secondaire Toronto Ouest","Ontario",8258,NA
+NA,"Geelong","Australia",NA,NA,"frc8259",NA,NA,NA,NA,"Deakin University&Family/Community","Deakin Velocity","3216",2020,"Family/Community","Victoria",8259,NA
+NA,"Merkez","Turkey",NA,NA,"frc8260",NA,NA,NA,NA,"AFYONKARAHİSAR DUMLUPINAR BİLİM VE SANAT MERKEZİ","ROBİLSA","03020",2020,"AFYONKARAHİSAR DUMLUPINAR BİLİM VE SANAT MERKEZİ","Afyonkarahisar",8260,"http://www.robilsa.weebly.com"
+NA,"KUCUKCEKMECE","Turkey",NA,NA,"frc8261",NA,NA,NA,NA,"Our Guardians/Tema İstanbul/As Spor/Lc Waikiki/School counsil&Temapark Bahcesehir High School for Science and Technology","PROGRESSUS","34307",2020,"Temapark Bahcesehir High School for Science and Technology","Istanbul",8261,NA
+NA,"Palo Alto","USA",NA,NA,"frc8262",NA,NA,NA,NA,"Family/Community","Jump Robotics","94301",2020,"Family/Community","California",8262,"http://www.jumprobotics.org"
+NA,"Istanbul","Turkey",NA,NA,"frc8263",NA,NA,NA,NA,"Erensan Isı Cihazları Pazarlama ve Servis A.Ş/Private Saint Benoît French Highschool School Council/Ali Burak Tuncer/Arzu Karslıoğlu/Mehmet Demir/Lütfi Oktay Alemdar/Berfu Salıcı Yakıt /JustSnap Teknoloji Ticaret A.Ş./Serhat Yalamanoğlu/Christopher Rogenbuke &Saint Benoît French High School  - Lycée français Saint Benoît - Saint Benoît Fransız Lisesi","Robin","34425 ",2020,"Saint Benoît French High School  - Lycée français Saint Benoît - Saint Benoît Fransız Lisesi","Istanbul",8263,NA
+NA,"İzmit","Turkey",NA,NA,"frc8264",NA,NA,NA,NA,"3M&ATATÜRK MESLEKİ VE TEKNİK ANADOLU LİSESİ","EKOBOT41","41100",2020,"ATATÜRK MESLEKİ VE TEKNİK ANADOLU LİSESİ","Kocaeli",8264,NA
+NA,"Mission","USA",NA,NA,"frc8265",NA,NA,NA,NA,"Mission Collegiate High School","MCHS Knights","78573",2020,"Mission Collegiate High School","Texas",8265,NA
+NA,"LAGUNA DEL REY","Mexico",NA,NA,"frc8266",NA,NA,NA,NA,"CECyTEC MARTIN LUTHER KING LAGUNA DEL REY","Peñoles-OWLBOT","27630",2020,"CECyTEC MARTIN LUTHER KING LAGUNA DEL REY","Coahuila",8266,NA
+NA,"Long Beach","USA",NA,NA,"frc8267",NA,NA,NA,NA,"Long Beach High School","Riptide","11561",2020,"Long Beach High School","New York",8267,NA
+NA,"Ashley","USA",NA,NA,"frc8268",NA,NA,NA,NA,"&Ashley Cmty School","Ashley Bears","48806",2020,"Ashley Cmty School","Michigan",8268,NA
+NA,"Perris","USA",NA,NA,"frc8269",NA,NA,NA,NA,"Heritage High School","Patrionauts","92570",2020,"Heritage High School","California",8269,NA
+NA,"Taipei","Chinese Taipei",NA,NA,"frc8270",NA,NA,NA,NA,"Taipei Municipal Neihu High School & Taipei Municipal Nan Gang Vocational High School","Double N","11475",2020,"Taipei Municipal Nan Gang Vocational High School & Taipei Municipal Neihu High School","Taipei Special Municipality",8270,NA
+NA,"Augusta","USA",NA,NA,"frc8271",NA,NA,NA,NA,"Westside High School","WESTSIDE 1002","30907",2020,"Westside High School","Georgia",8271,NA
+NA,"Hangzhou","China",NA,NA,"frc8272",NA,NA,NA,NA,"Xiaoshan High School, Zhejiang Province","Antimatter Neko","311201",2020,"Xiaoshan High School, Zhejiang Province","Zhejiang",8272,NA
+NA,"Beijing","China",NA,NA,"frc8273",NA,NA,NA,NA,"Family/Community","Titanibot","100006",2020,"Family/Community","Beijing",8273,NA
+NA,"Houston","USA",NA,NA,"frc8274",NA,NA,NA,NA,"Sterling Aviation High School","Raider Robotics","77048",2020,"Sterling Aviation High School","Texas",8274,NA
+NA,"Grand Rapids","USA",NA,NA,"frc8275",NA,NA,NA,NA,"MAGNA /Carter Products Company/Toyota &Lake Michigan Academy","Technical Difficulties ","49548",2020,"Lake Michigan Academy","Michigan",8275,NA
+NA,"SÃO JOSÉ DOS CAMPOS","Brazil",NA,NA,"frc8276",NA,NA,NA,NA,"Escola Prof Ilza Nascimento Pintus - ETEC São José dos Campos","ETECHNOLOGY#8276","12230084",2020,"Escola Prof Ilza Nascimento Pintus - ETEC São José dos Campos","São Paulo",8276,NA
+NA,"Wheeling","USA",NA,NA,"frc8277",NA,NA,NA,NA,"Family/Community","PEI Bots","60090",2020,"Family/Community","Illinois",8277,NA
+NA,"Burnaby","Canada",NA,NA,"frc8278",NA,NA,NA,NA,"Alpha Secondary School","Alpha Robotics","V5C 3E2",2020,"Alpha Secondary School","British Columbia",8278,NA
+NA,"Fort Pierce","USA",NA,NA,"frc8279",NA,NA,NA,NA,"Lincoln Park Academy","Lincoln Park Academy ","34950",2020,"Lincoln Park Academy","Florida",8279,NA
+NA,"Detroit","USA",NA,NA,"frc8280",NA,NA,NA,NA,"KLA Corporation&The School at Marygrove","The School at Marygrove ROVERS","48221",2020,"The School at Marygrove","Michigan",8280,NA
+NA,"San Jose","USA",NA,NA,"frc8281",NA,NA,NA,NA,"Allstars United Education Foundation","Allstars","95148",2020,"Allstars United Education Foundation","California",8281,"https://www.allstarsunited.org"
+NA,"Evandale","Australia",NA,NA,"frc8282",NA,NA,NA,NA,"Family/Community","Metal Minds Robotics","7212",2020,"Family/Community","Tasmania",8282,"https://www.metalmindsrobotics.com"
+NA,"Denver","USA",NA,NA,"frc8283",NA,NA,NA,NA,"NASA/Comcast & MLK Jr Early College Middle HS","Pantherbots","80249",2020,"MLK Jr Early College Middle HS","Colorado",8283,NA
+NA,"Brooklyn","USA",NA,NA,"frc8284",NA,NA,NA,NA,"Robotics NYU Tandon/B[x] Spaces /STEMgurus, Inc./2020 Argosy Foundation New Team Growth Grant&Academy of Urban Planning","Urban Planners","11237",2020,"Academy of Urban Planning","New York",8284,NA
+NA,"Ravenna","USA",NA,NA,"frc8285",NA,NA,NA,NA,"Dr. Nick Beechnau: Ravenna Family Practice/Dr. Timothy & JoAnn Beechnau: Ravenna Family Practice/Linck Insurance Agency/Ravenna Lions Club/Ravenna Pattern and Manufacturing/Bully's Masonry/Newkirk Electric/Ravenna Chamber of Commerce/Jerry's Welding /Ravenna High School&Ravenna High School","Ravenna Bulldogs Robotics","49451",2020,"Ravenna High School","Michigan",8285,NA
+NA,"Farwell","USA",NA,NA,"frc8286",NA,NA,NA,NA,"Farwell High School","Robotnic","48622",2020,"Farwell High School","Michigan",8286,NA
+NA,"Aston","USA",NA,NA,"frc8287",NA,NA,NA,NA,"Delaware Co Technical HS","Team Malfunction","19014",2020,"Delaware Co Technical HS","Pennsylvania",8287,NA
+NA,"Monterrey","Mexico",NA,NA,"frc8288",NA,NA,NA,NA,"Tecmilenio Campus Las Torres Monterrey","Machine Hunters","64909",2020,"Tecmilenio Campus Las Torres Monterrey","Nuevo León",8288,NA
+NA,"South Point","USA",NA,NA,"frc8289",NA,NA,NA,NA,"Tri-State STEM+M Early College High School&Tri-State STEM+M Early College High School","STEM+M Ravens Robotics","45680",2020,"Tri-State STEM+M Early College High School","Ohio",8289,"https://www.tristatestem.com/"
+NA,"RAMOS ARIZPE","Mexico",NA,NA,"frc8290",NA,NA,NA,NA,"CETIS 60","Peñoles - Jaegers60","25900",2020,"CETIS 60","Coahuila",8290,NA
+NA,"Torreon","Mexico",NA,NA,"frc8291",NA,NA,NA,NA,"Bachillerato Técnico Industrial De La Laguna","PEÑOLES-Yellow Experience Bateil","27228",2020,"Bachillerato Técnico Industrial De La Laguna","Coahuila",8291,"http://www.bateil.edu.mx"
+NA,"Palm Coast","USA",NA,NA,"frc8292",NA,NA,NA,NA,"Flagler Palm Coast High School","FPC Bulldogs Robotics","32164",2020,"Flagler Palm Coast High School","Florida",8292,"http://www.fpcbulldogs.com"
+NA,"Zapopan","Mexico",NA,NA,"frc8293",NA,NA,NA,NA,"Tecmilenio Campus Zapopan","Whitefox Robotics","45180",2020,"Tecmilenio Campus Zapopan","Jalisco",8293,"https://www.facebook.com/WhiteFoxRobotics/"
+NA,"Nelson","Canada",NA,NA,"frc8294",NA,NA,NA,NA,"L V Rogers Secondary School","LVR Inn0vat0rs","V1L6X2",2020,"L V Rogers Secondary School","British Columbia",8294,NA
+NA,"El Paso","USA",NA,NA,"frc8295",NA,NA,NA,NA,"Texas Workforce Commission&Pebble Hill High School","SparTex","79938",2020,"Pebble Hill High School","Texas",8295,NA
+NA,"Scarborough","Canada",NA,NA,"frc8296",NA,NA,NA,NA,"Lester B Pearson C.I.","Bengals","M1B 2L2",2020,"Lester B Pearson C.I.","Ontario",8296,NA
+NA,"Ypsilanti","USA",NA,NA,"frc8297",NA,NA,NA,NA,"Washtenaw Int'L High School","WIHI Robo Wolves","48198",2020,"Washtenaw Int'L High School","Michigan",8297,NA
+NA,"Luverne","USA",NA,NA,"frc8298",NA,NA,NA,NA,"Nextera Energy/Papik Motors and Heartland Chevrolet/Fey Industries&Luverne Middle High School","Mighty Morphing Banana Slugs","56156",2020,"Luverne Middle High School","Minnesota",8298,"http://frc8298.com"
+NA,"Brighton","USA",NA,NA,"frc8299",NA,NA,NA,NA,"State of Michigan&Flextech HS Brighton","Techno Falcons","48114",2020,"Flextech HS Brighton","Michigan",8299,"https://brighton.flextechschools.org/apps/pages/index.jsp?uREC_ID=1667449&type=d&pREC_ID=1817014"
+NA,"Jackson","USA",NA,NA,"frc8300",NA,NA,NA,NA,"Lumen Christi Catholic School","Lumen Christi Titans","49203",2020,"Lumen Christi Catholic School","Michigan",8300,NA
+NA,"San Diego","USA",NA,NA,"frc8301",NA,NA,NA,NA,"&Family/Community","Sparks","92130",2020,"Family/Community","California",8301,NA
+NA,"Federal Way","USA",NA,NA,"frc8302",NA,NA,NA,NA,"Todd Beamer High School","Beamer Team","98003",2020,"Todd Beamer High School","Washington",8302,NA
+NA,"Federal Way","USA",NA,NA,"frc8303",NA,NA,NA,NA,"Decatur High School","G0LDEN_GAT0RS","98023",2020,"Decatur High School","Washington",8303,"http://www.none.com"
+NA,"Morehead City","USA",NA,NA,"frc8304",NA,NA,NA,NA,"Mast Early College High School","MaST","28557",2020,"Mast Early College High School","North Carolina",8304,NA
+NA,"Nepean","Canada",NA,NA,"frc8305",NA,NA,NA,NA,"Family/Community","Nepean Robotics","K2J6C6",2020,"Family/Community","Ontario",8305,NA
+NA,"Phoenix","USA",NA,NA,"frc8306",NA,NA,NA,NA,"Microchip Technology Employes&Sierra Linda High School","Sierra Linda High School Robotics ","85043",2020,"Sierra Linda High School","Arizona",8306,NA
+NA,"Gans","USA",NA,NA,"frc8307",NA,NA,NA,NA,"Gans Public School","GRIZZLY","74936",2020,"Gans Public School","Oklahoma",8307,NA
+NA,"GÖLCÜK","Turkey",NA,NA,"frc8308",NA,NA,NA,NA,"GOLCUK FEN LISESI","GFLRobotics","41650",2020,"GOLCUK FEN LISESI","Kocaeli",8308,NA
+NA,"KÜÇÜKÇEKMECE","Turkey",NA,NA,"frc8309",NA,NA,NA,NA,"ATAKENT İMKB MESLEKİ VE TEKNİK ANADOLU LİSESİ MÜDÜRLÜĞÜ","WILDCAT","34400",2020,"ATAKENT İMKB MESLEKİ VE TEKNİK ANADOLU LİSESİ MÜDÜRLÜĞÜ","Istanbul",8309,"http://atakenteml.meb.k12.tr/"
+NA,"ANKARA","Turkey",NA,NA,"frc8310",NA,NA,NA,NA,"Private ASO Technical High School","ASO.TECHO","06946",2020,"Private ASO Technical High School","Ankara",8310,NA
+NA,"Istanbul","Turkey",NA,NA,"frc8311",NA,NA,NA,NA,"Sankt Georg Avusturya Lisesi","PRISER","34460",2020,"Sankt Georg Avusturya Lisesi","Istanbul",8311,NA
+NA,"Surrey","Canada",NA,NA,"frc8312",NA,NA,NA,NA,"Queen Elizabeth Secondary School","Royals Robotics","V3V 5W4",2020,"Queen Elizabeth Secondary School","British Columbia",8312,NA
+NA,"Pyeongtaek-si","South Korea",NA,NA,"frc8313",NA,NA,NA,NA,"Society of American Military Engineers Korea Post & US Army Garrison Humphreys High School & Humphreys HS","Waygooks","17923",2020,"Humphreys HS & US Army Garrison Humphreys High School","Gyeonggido",8313,"https://www.facebook.com/waygooksrobotclub"
+NA,"Carsonville","USA",NA,NA,"frc8314",NA,NA,NA,NA,"Carsonville-Port Sanilac HS","The Roar","48419",2020,"Carsonville-Port Sanilac HS","Michigan",8314,NA
+NA,"Monroe","USA",NA,NA,"frc8315",NA,NA,NA,NA,"ABB Robotics & Sun Valley High School","Spartan Robots","28110",2020,"Sun Valley High School","North Carolina",8315,NA
+NA,"Rockland","Canada",NA,NA,"frc8316",NA,NA,NA,NA,"École secondaire catholique L'Escale","Les Cougars de L'Escale","K4K 1C3",2020,"École secondaire catholique L'Escale","Ontario",8316,NA
+NA,"Kamloops","Canada",NA,NA,"frc8317",NA,NA,NA,NA,"South Kamloops Secondary School","South Kamloops Titans Robotics","V2C 3E9",2020,"South Kamloops Secondary School","British Columbia",8317,NA
+NA,"Kelowna","Canada",NA,NA,"frc8318",NA,NA,NA,NA,"Aptixx Robotics & Rutland Senior Secondary School","RSS Robotics","V1X 3B6",2020,"Rutland Senior Secondary School & Aptixx Robotics","British Columbia",8318,NA
+NA,"Hillsboro","USA",NA,NA,"frc8319",NA,NA,NA,NA,"Hillsboro High School","HHS Robotics","76645",2020,"Hillsboro High School","Texas",8319,NA
+NA,"Hamilton","Canada",NA,NA,"frc8320",NA,NA,NA,NA,"Argosy Foundation New Team Growth Grant/FIRST Canada/Cementation Ltd. & Columbia International College","D.O.X.A. 8320","L8S 4P3",2020,"Columbia International College","Ontario",8320,NA
+NA,"Vacaville","USA",NA,NA,"frc8321",NA,NA,NA,NA,"Vanden Robotics Foundation/United States Education Foundation&BEIJING ECONOMIC MANAGEMENT SCHOOL&Family/Community","BEMS","95687",2020,"Family/Community & BEIJING ECONOMIC MANAGEMENT SCHOOL","California",8321,NA
+NA,"100 Mile House","Canada",NA,NA,"frc8322",NA,NA,NA,NA,"Peter Skene Ogden Secondary School","Peter Skene Ogden Roughneck Robotics","V0K 2E0",2020,"Peter Skene Ogden Secondary School","British Columbia",8322,NA
+NA,"Grand Marais","USA",NA,NA,"frc8323",NA,NA,NA,NA,"Burt Twp School","PolarBots","49839",2020,"Burt Twp School","Michigan",8323,NA
+NA,"Orlando","USA",NA,NA,"frc8324",NA,NA,NA,NA,"4-H","MECO Robotics 8324","32828",2020,"4-H","Florida",8324,NA
+NA,"Espanola","USA",NA,NA,"frc8325",NA,NA,NA,NA,"NASA /Boeing&Mccurdy Charter School","Bobcat Bots","87532",2020,"Mccurdy Charter School","New Mexico",8325,NA
+NA,"Washington","USA",NA,NA,"frc8326",NA,NA,NA,NA,"Georgetown Day High School","GDS Mighty Hoppers","20016",2020,"Georgetown Day High School","District of Columbia",8326,NA
+NA,"Paradise","USA",NA,NA,"frc8327",NA,NA,NA,NA,"Whitefish Twp Cmty School","Paradise Rockets","49768",2020,"Whitefish Twp Cmty School","Michigan",8327,NA
+NA,"Pellston","USA",NA,NA,"frc8328",NA,NA,NA,NA,"Pellston Middle High School","Miss Ice Bots","49769",2020,"Pellston Middle High School","Michigan",8328,NA
+NA,"Redford","USA",NA,NA,"frc8329",NA,NA,NA,NA,"Westfield Preparatory High School&Westfield Preparatory High School","Warrior 1","48239",2020,"Westfield Preparatory High School","Michigan",8329,NA
+NA,"Vancouver","Canada",NA,NA,"frc8330",NA,NA,NA,NA,"Killarney Secondary School","KillarneyRobotics","V5S 2X7",2020,"Killarney Secondary School","British Columbia",8330,NA
+NA,"North Vancouver","Canada",NA,NA,"frc8331",NA,NA,NA,NA,"Zen Maker Labs/Barekat Design Services LTD./North Vancouver School District #44/Carson Graham Secondary School & Zen Maker Lab","Zen Maker Lab Robotics","V7M 2W7",2020,"Zen Maker Lab","British Columbia",8331,NA
+NA,"Rochester","USA",NA,NA,"frc8332",NA,NA,NA,NA,"Avondale High School","Alternate Reality","48309",2020,"Avondale High School","Michigan",8332,NA
+NA,"Beer Yakov","Israel",NA,NA,"frc8333",NA,NA,NA,NA,"Atid Neve Naoom","TOPAZ4X4","7030861",2020,"Atid Neve Naoom","HaMerkaz",8333,NA
+NA,"Colorado Springs","USA",NA,NA,"frc8334",NA,NA,NA,NA,"NASA/Kratos&Classical Academy-North","Titan Robotics","80921",2020,"Classical Academy-North","Colorado",8334,NA
+NA,"CABA","Argentina",NA,NA,"frc8335",NA,NA,NA,NA,"KERN IT International LLC/LISIT/WORLD ORT&ORT Argentina","CheckMate","1184",2020,"ORT Argentina","Ciudad Autónoma de Buenos Aires",8335,NA
+NA,"Walnut","USA",NA,NA,"frc8336",NA,NA,NA,NA,"Walnut High School & Family/Community","Wolf Corp. FRC","91789",2020,"Family/Community & Walnut High School","California",8336,"https://www.facebook.com/TeamWolfCorp"
+NA,"Laurel","USA",NA,NA,"frc8337",NA,NA,NA,NA,"Central Creativity","Central Creativity Team Wingnuts","39440",2020,"Central Creativity","Mississippi",8337,"https://www.centralcreativity.com"
+NA,"West Kelowna","Canada",NA,NA,"frc8338",NA,NA,NA,NA,"SkySails Technologies - Kelowna, B.C./NAPA West Kelowna, B.C./B.C. Hydro/Finning Canada&Mount Boucherie Secondary School","Boucherie Bears","V1Z 2T6",2020,"Mount Boucherie Secondary School","British Columbia",8338,NA
+NA,"Penticton","Canada",NA,NA,"frc8339",NA,NA,NA,NA,"Princess Margaret Secondary School & Penticton Secondary School","Penticton Robotics","V2A 3T1",2020,"Penticton Secondary School & Princess Margaret Secondary School","British Columbia",8339,NA
+NA,"YARKA","Israel",NA,NA,"frc8340",NA,NA,NA,NA,"A technology school Yerka/FIRST HAGLIL /ATED Net &AATID YARKA","F.R.A.Y","2496700",2020,"AATID YARKA","HaZafon",8340,NA
+NA,"Panama City","Panama",NA,NA,"frc8341",NA,NA,NA,NA,"Pizza Byte Robotics Club","Pizza Byte","PAN",2020,"Pizza Byte Robotics Club","Panamá",8341,NA
+NA,"Manistee","USA",NA,NA,"frc8342",NA,NA,NA,NA,"Manistee Middle High School","m(stee) squared","49660",2020,"Manistee Middle High School","Michigan",8342,"https://moodle.manistee.org/course/view.php?id=1386"
+NA,"Suffern","USA",NA,NA,"frc8343",NA,NA,NA,NA,"Spring Valley High School","Team Spring Valley","10901",2020,"Spring Valley High School","New York",8343,NA
+NA,"Muskegon","USA",NA,NA,"frc8344",NA,NA,NA,NA,"Orchard View High School","OV Robo Birds","49442",2020,"Orchard View High School","Michigan",8344,NA
+NA,"Nepean","Canada",NA,NA,"frc8345",NA,NA,NA,NA,"John McCrae Secondary School","John McCrae Secondary School","K2J 4T2",2020,"John McCrae Secondary School","Ontario",8345,NA
+NA,"Brooklyn","USA",NA,NA,"frc8346",NA,NA,NA,NA,"Brooklyn STEAM Center","Brooklyn STEAM Machine","11205",2020,"Brooklyn STEAM Center","New York",8346,NA
+NA,"New York Mills","USA",NA,NA,"frc8347",NA,NA,NA,NA,"Pentair&New York Mills Jr Sr High Sch","Broken Eagles","56567",2020,"New York Mills Jr Sr High Sch","Minnesota",8347,NA
+NA,"tamra","Israel",NA,NA,"frc8348",NA,NA,NA,NA,"first hagalil","FG1946","30811",2020,"first hagalil","HaZafon",8348,NA
+NA,"Newmarket","Canada",NA,NA,"frc8349",NA,NA,NA,NA,"FIRST Canada Rookie Grant/New Team Growth Grant/NewMakeIt/Tech-Pre/Magna/SicoSoft Consulting&Newbotics Community Robotics","Newbotics","L3Y 1R9",2020,"Newbotics Community Robotics","Ontario",8349,"https://newbotics.org"
+NA,"Brockville","Canada",NA,NA,"frc8350",NA,NA,NA,NA,"Thousand Islands High School","TISS Pirates","K6V 3H1",2020,"Thousand Islands High School","Ontario",8350,NA
+NA,"Chihuahua","Mexico",NA,NA,"frc8351",NA,NA,NA,NA,"FUNDACION AZTECA/Robótica Para Todos/Grupo Botrregos&Family/Community","Oozma Kappa","31300",2020,"Family/Community","Chihuahua",8351,NA
+NA,"Detroit","USA",NA,NA,"frc8352",NA,NA,NA,NA,"Martin Luther King High School","Code Gold","48207",2020,"Martin Luther King High School","Michigan",8352,NA
+NA,"San Diego","USA",NA,NA,"frc8353",NA,NA,NA,NA,"San Diego High School","Botqueros 2 the FUTURE!","78384",2020,"San Diego High School","Texas",8353,NA
+NA,"BRANDON","Canada",NA,NA,"frc8354",NA,NA,NA,NA,"Vincent Massey High School","The Prairie People"," R7B2H8",2020,"Vincent Massey High School","Manitoba",8354,"https://prairieboyedumusings.weebly.com/"
+NA,"Saint Paul","USA",NA,NA,"frc8355",NA,NA,NA,NA,"Higher Ground Academy","Melanin Minds","55108",2020,"Higher Ground Academy","Minnesota",8355,NA
+NA,"Tel Aviv","Israel",NA,NA,"frc8356",NA,NA,NA,NA,"Ironi Tet","Black Rhinos","6732318",2020,"Ironi Tet","Tel-Aviv",8356,NA
+NA,"Clinton","USA",NA,NA,"frc8357",NA,NA,NA,NA,"Prince George's County 4-H Youth Development/National Aeronautics and Space Administration&4-H","Chrysaora Robotics spr. by P.G. Co. 4-H and NASA","20735",2020,"4-H","Maryland",8357,NA
+NA,"Red Oak","USA",NA,NA,"frc8358",NA,NA,NA,NA,"Compass Youth Center","The CITI Pack","27868",2020,"Compass Youth Center","North Carolina",8358,NA
+NA,"KOCAELİ/BAŞİSKELE","Turkey",NA,NA,"frc8359",NA,NA,NA,NA,"ŞEHİT OZAN ÖZEN KIZ ANADOLU İMAM HATİP LİSESİ","GREENTECH","41190",2020,"ŞEHİT OZAN ÖZEN KIZ ANADOLU İMAM HATİP LİSESİ","Kocaeli",8359,"http://www.ozanozenihl.meb.k12.tr"
+NA,"Fatih","Turkey",NA,NA,"frc8360",NA,NA,NA,NA,"Çapa Fen Lisesi","Chappa","34093",2020,"Çapa Fen Lisesi","Istanbul",8360,NA
+NA,"Detroit","USA",NA,NA,"frc8361",NA,NA,NA,NA,"Way Academy Sw","Toro Loco","48209",2020,"Way Academy Sw","Michigan",8361,NA
+NA,"Detroit","USA",NA,NA,"frc8362",NA,NA,NA,NA,"Way Academy-West","Cyber Tigers West","48228",2020,"Way Academy-West","Michigan",8362,NA
+NA,"Marcellus","USA",NA,NA,"frc8363",NA,NA,NA,NA,"Marcellus Jr Sr High School","Marcellus Wildbots","49067",2020,"Marcellus Jr Sr High School","Michigan",8363,NA
+NA,"Center Line","USA",NA,NA,"frc8364",NA,NA,NA,NA,"Rising Stars Academy","Rising Stars Academy - Nebulas","48015",2020,"Rising Stars Academy","Michigan",8364,NA
+NA,"Gwinn","USA",NA,NA,"frc8365",NA,NA,NA,NA,"Gwinn Middle High School","Modeltowners","49841",2020,"Gwinn Middle High School","Michigan",8365,"http://www.gwinnschools.org"
+NA,"Ida","USA",NA,NA,"frc8366",NA,NA,NA,NA,"Ida High School","Ida Bluestreaks","48140",2020,"Ida High School","Michigan",8366,NA
+NA,"Grand Rapids","USA",NA,NA,"frc8367",NA,NA,NA,NA,"Godwin Heights High School","Godwin Heights High School Robotics","49548",2020,"Godwin Heights High School","Michigan",8367,NA
+NA,"Flint","USA",NA,NA,"frc8368",NA,NA,NA,NA,"Genesee STEM Academy","Red Eye Robotics","48532",2020,"Genesee STEM Academy","Michigan",8368,NA
+NA,"Uvalde","USA",NA,NA,"frc8369",NA,NA,NA,NA,"Uvalde High School","Coyotech Robotics","78801",2020,"Uvalde High School","Texas",8369,NA
+NA,"Katy","USA",NA,NA,"frc8370",NA,NA,NA,NA,"Argosy Foundation/WoodForest National Band/National Instruments/Texas Workforce Commission&Patricia Paetow High School","Glow With The Flow","77493",2020,"Patricia Paetow High School","Texas",8370,NA
+NA,"Shepherd","USA",NA,NA,"frc8371",NA,NA,NA,NA,"Shepherd High School","Surgeons of Steel","77371",2020,"Shepherd High School","Texas",8371,NA
+NA,"Hill City","USA",NA,NA,"frc8372",NA,NA,NA,NA,"Hill City School & Northland Jr Sr High School","HCN Storm","55748",2020,"Northland Jr Sr High School & Hill City School","Minnesota",8372,NA
+NA,"Blissfield","USA",NA,NA,"frc8373",NA,NA,NA,NA,"Schupan&Blissfield High School","The Flying Octopi: 8373 R.R.T.","49228",2020,"Blissfield High School","Michigan",8373,NA
+NA,"Leslie","USA",NA,NA,"frc8374",NA,NA,NA,NA,"Leslie Public Schools&Leslie High School","Bongo Bots","49251",2020,"Leslie High School","Michigan",8374,NA
+NA,"Taylor","USA",NA,NA,"frc8375",NA,NA,NA,NA,"Taylor Preparatory High School","Tech Tigers","48180",2020,"Taylor Preparatory High School","Michigan",8375,NA
+NA,"Grand Rapids","USA",NA,NA,"frc8376",NA,NA,NA,NA,"Grand River Prep High School","Tech Titans","49548",2020,"Grand River Prep High School","Michigan",8376,NA
+NA,"Lansing","USA",NA,NA,"frc8377",NA,NA,NA,NA,"Martin Luther High School","MLHS Mavericks","48912",2020,"Martin Luther High School","Michigan",8377,NA
+NA,"Hudson","USA",NA,NA,"frc8378",NA,NA,NA,NA,"Southern Michigan Center of Science and Industry/SabreTech/Sukhi's 127 Party Store  &Hudson Area Jr Sr High School","Hudson Tigers","49247",2020,"Hudson Area Jr Sr High School","Michigan",8378,NA
+NA,"Detroit","USA",NA,NA,"frc8379",NA,NA,NA,NA,"DPSCD WSA Panthers&West Side Acad Inform Tech","WSA Panthers","48208",2020,"West Side Acad Inform Tech","Michigan",8379,NA
+NA,"Livonia","USA",NA,NA,"frc8380",NA,NA,NA,NA,"Clarenceville High School","Clarenceville Trojans","48152",2020,"Clarenceville High School","Michigan",8380,NA
+NA,"Rapid River","USA",NA,NA,"frc8381",NA,NA,NA,NA,"Rapid River High School","Rapid River STEM Classroom Team","49878",2020,"Rapid River High School","Michigan",8381,NA
+NA,"Kingsford","USA",NA,NA,"frc8382",NA,NA,NA,NA,"Kingsford Middle School","Flivver Robotics","49802",2020,"Kingsford Middle School","Michigan",8382,NA
+NA,"Tijuana","Mexico",NA,NA,"frc8383",NA,NA,NA,NA,"Qualcomm/Tijuana Innovadora & Tijuana Robótica&Preparatoria Federal Lázaro Cárdenas","Pioneers","22010",2020,"Preparatoria Federal Lázaro Cárdenas","Baja California",8383,NA
+NA,"Brockville","Canada",NA,NA,"frc8384",NA,NA,NA,NA,"FIRST&Fulford Academy","The Internationals","K6V 1E2",2020,"Fulford Academy","Ontario",8384,NA
+NA,"Mount Morris","USA",NA,NA,"frc8385",NA,NA,NA,NA,"MAGNA/Toyota/Michigan Department of Education/Mt. Morris Schools/Zodiac Enterpises&E a Johnson High School","Metal Madness","48458",2020,"E a Johnson High School","Michigan",8385,NA
+NA,"Puyallup","USA",NA,NA,"frc8386",NA,NA,NA,NA,"Gov John Rogers Sr High School","Th3_IRON_G0@+$","98373",2020,"Gov John Rogers Sr High School","Washington",8386,NA
+NA,"Las Vegas","USA",NA,NA,"frc8387",NA,NA,NA,NA,"Tesla/Gene Haas Foundation&Advanced Technologies Academy","The Thingy Thing Team","89106",2020,"Advanced Technologies Academy","Nevada",8387,NA
+NA,"Mesquite","USA",NA,NA,"frc8388",NA,NA,NA,NA,"West Mesquite High School","West Mesquite Robotics 1","75149",2020,"West Mesquite High School","Texas",8388,NA
+NA,"Houston","USA",NA,NA,"frc8389",NA,NA,NA,NA,"Aldine Senior HS","Team Mustang","77032",2020,"Aldine Senior HS","Texas",8389,NA
+NA,"Climax","USA",NA,NA,"frc8390",NA,NA,NA,NA,"Climax-Scotts Jr Sr High Sch","Panthers","49034",2020,"Climax-Scotts Jr Sr High Sch","Michigan",8390,NA
+NA,"Panama","Panama",NA,NA,"frc8391",NA,NA,NA,NA,"Fundacion Nacional para el Desarrollo de la STEAM","PANAMAFRC2020","Panama",2020,"Fundacion Nacional para el Desarrollo de la STEAM","Panamá",8391,"https://www.fundesteam.org/"
+NA,"Houston","USA",NA,NA,"frc8392",NA,NA,NA,NA,"Douglas Macarthur High School","Mac Attack","77093",2020,"Douglas Macarthur High School","Texas",8392,NA
+NA,"Onsted","USA",NA,NA,"frc8393",NA,NA,NA,NA,"Onsted High School","Wildcats2020","49265",2020,"Onsted High School","Michigan",8393,NA
+NA,"Addison","USA",NA,NA,"frc8394",NA,NA,NA,NA,"Addison High School","Addison Panthers","49220",2020,"Addison High School","Michigan",8394,NA
+NA,"Keaau","USA",NA,NA,"frc8395",NA,NA,NA,NA,"Kea'Au High School","Cougar Techs","96749",2020,"Kea'Au High School","Hawaii",8395,NA
+NA,"Pentwater","USA",NA,NA,"frc8396",NA,NA,NA,NA,"Pentwater School","Pentbots1","49449",2020,"Pentwater School","Michigan",8396,"https://pentbots.dev"
+NA,"Grand Rapids","USA",NA,NA,"frc8397",NA,NA,NA,NA,"Kelloggsville High School","Mission Control Robotics","49548",2020,"Kelloggsville High School","Michigan",8397,NA
+NA,"Ferndale","USA",NA,NA,"frc8398",NA,NA,NA,NA,"University High School","MandUlorians","48220",2020,"University High School","Michigan",8398,NA
+NA,"Jackson","USA",NA,NA,"frc8399",NA,NA,NA,NA,"Chem Trend/Toyota/Alro Steel&Da Vinci Secondary Institute","The Electric Mayhem","49201",2020,"Da Vinci Secondary Institute","Michigan",8399,NA
+NA,"Boyne Falls","USA",NA,NA,"frc8400",NA,NA,NA,NA,"Boyne Falls Public School","Boyne Falls Loggers","49713",2020,"Boyne Falls Public School","Michigan",8400,NA
+NA,"Saraland","USA",NA,NA,"frc8401",NA,NA,NA,NA,"Saraland High School","Saraland Robotics Team","36571",2020,"Saraland High School","Alabama",8401,NA
+NA,"istanbul","Turkey",NA,NA,"frc8402",NA,NA,NA,NA,"Kültür 2000 Fen Lisesi","Star Fusion2","34500",2020,"Kültür 2000 Fen Lisesi","Istanbul",8402,NA
+NA,"Hamilton","Canada",NA,NA,"frc8403",NA,NA,NA,NA,"Glendale Secondary School","Glendale","L8K 4G1",2020,"Glendale Secondary School","Ontario",8403,NA
+NA,"Fremont","USA",NA,NA,"frc8404",NA,NA,NA,NA,"Family/Community","SKYWALKERS","94555",2020,"Family/Community","California",8404,NA
+NA,"San Antonio","USA",NA,NA,"frc8405",NA,NA,NA,NA,"2020 Argosy Foundation New Team Growth Grant&Keystone School","Reaching for the Skynet","78250",2020,"Keystone School","Texas",8405,"http://reachingfortheskynet.com/"
+NA,"Kyiv","Ukraine",NA,NA,"frc8406",NA,NA,NA,NA,"European Collegium & United Robotics Generation","SyZyGy","02000",2020,"United Robotics Generation & European Collegium","Kyïv",8406,NA
+NA,"Almaty","Kazakhstan",NA,NA,"frc8407",NA,NA,NA,NA,"Kerneu Technologies","Kerneu Robotics","100024",2020,"Kerneu Technologies","Almaty",8407,NA
+NA,"Wink","USA",NA,NA,"frc8408",NA,NA,NA,NA,"Wink High School","Kiss Kats","79789",2020,"Wink High School","Texas",8408,NA
+NA,"Mankato","USA",NA,NA,"frc8409",NA,NA,NA,NA,"Kato Public Charter School","Kato Coyote's ","56001",2020,"Kato Public Charter School","Minnesota",8409,NA
+NA,"Durham","USA",NA,NA,"frc8410",NA,NA,NA,NA,"Family/Community","Oyster River Robotics","03824",2020,"Family/Community","New Hampshire",8410,NA
+NA,"LERDO ","Mexico",NA,NA,"frc8411",NA,NA,NA,NA,"Cbtis 4","4.BOTS","35150",2020,"Cbtis 4","Durango",8411,"https://www.cbtis4.edu.mx"
+NA,"Battle Lake","USA",NA,NA,"frc8412",NA,NA,NA,NA,"Battle Lake School","Battle Lake Schools","56515",2020,"Battle Lake School","Minnesota",8412,NA
+NA,"Chattanooga","USA",NA,NA,"frc8413",NA,NA,NA,NA,"Chattanooga Girls Ldrshp Acad","CGLA Mustang Innovators","37404",2020,"Chattanooga Girls Ldrshp Acad","Tennessee",8413,NA
+NA,"Mercedes","USA",NA,NA,"frc8414",NA,NA,NA,NA,"Science Acad of South Texas","Science Academy of South Texas","78570",2020,"Science Acad of South Texas","Texas",8414,NA
+NA,"Fort Worth","USA",NA,NA,"frc8415",NA,NA,NA,NA,"SER Jobs for Progress National, Inc.&Cristo Rey","Dino Nuggies","76133",2020,"Cristo Rey","Texas",8415,"https://www.cristoreyfortworth.org"
+NA,"Ely","USA",NA,NA,"frc8416",NA,NA,NA,NA,"Ely Memorial School","Wolfbotics 8416","55731",2020,"Ely Memorial School","Minnesota",8416,NA
+NA,"Maricopa","USA",NA,NA,"frc8417",NA,NA,NA,NA,"Out Of Orbit Labs/FIRST&Maricopa High School","Rambotics","85139",2020,"Maricopa High School","Arizona",8417,NA
+NA,"Metairie","USA",NA,NA,"frc8418",NA,NA,NA,NA,"Archbishop Chapelle High Sch","Archbishop Chapelle High School","70003",2020,"Archbishop Chapelle High Sch","Louisiana",8418,NA
+NA,"Mexico City","Mexico",NA,NA,"frc8419",NA,NA,NA,NA,"Family/Community","D - Mind Breakers","11340",2020,"Family/Community","Distrito Federal",8419,"https://www.facebook.com/dmindbreakers.dmb"
+NA,"Almaty","Kazakhstan",NA,NA,"frc8420",NA,NA,NA,NA,"Family/Community","Almaty Roboman","050000",2020,"Family/Community","Almaty",8420,"http://www.almatyroboman.kz"
+NA,"Littleton","USA",NA,NA,"frc8421",NA,NA,NA,NA,"Littleton High School","CRUSADERS","03561",2020,"Littleton High School","New Hampshire",8421,NA
+NA,"Pillager","USA",NA,NA,"frc8422",NA,NA,NA,NA,"Sourcewell/Pillager School District/Northern Minnesota Robotics Conference (NMRC)/Anderson Brothers/3M/Beach Construction/ATEK Companies/Cub Foods - Baxter/Reality Roasters&Pillager School","Husky Howlers","56473",2020,"Pillager School","Minnesota",8422,NA
+NA,"Temperance","USA",NA,NA,"frc8423",NA,NA,NA,NA,"Bedford Junior High School","Next Express","48182",2020,"Bedford Junior High School","Michigan",8423,NA
+NA,"Mason","USA",NA,NA,"frc8424",NA,NA,NA,NA,"Dart Container Corp/Kudan/Mason Public Schools/Dakkota Integrated System/Loc/Leightronix, Inc./GEStamp/It's Yours/Block Imaging/Ray Media Creative & Mason Middle School","Tractor Technicians Next Gen","48854",2020,"Mason Middle School","Michigan",8424,"https://www.tractornation3655.org"
+NA,"Gladstone","USA",NA,NA,"frc8425",NA,NA,NA,NA,"Gladstone Area Middle School","Happy Rock Brave Bots","49837",2020,"Gladstone Area Middle School","Michigan",8425,NA
+NA,"Novi","USA",NA,NA,"frc8426",NA,NA,NA,NA,"GM, Michigan Department of Education&Novi Middle School","Automated Amphibians","48375",2020,"Novi Middle School","Michigan",8426,NA
+NA,"Dearborn Heights","USA",NA,NA,"frc8427",NA,NA,NA,NA,"Riverside Middle School","Robo Ravens","48127",2020,"Riverside Middle School","Michigan",8427,NA
+NA,"Naples","USA",NA,NA,"frc8428",NA,NA,NA,NA,"Family/Community","The Outlaws","34117",2020,"Family/Community","Florida",8428,NA
+NA,"Durham","USA",NA,NA,"frc8429",NA,NA,NA,NA,"Family/Community","Valence Robotics",NA,2020,"Family/Community","North Carolina",8429,NA
