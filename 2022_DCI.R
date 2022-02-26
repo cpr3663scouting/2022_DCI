@@ -12,19 +12,23 @@ PullData <- function(Key, URL) {
   d <- flatten(c)
 }
 
-Matches <- PullData(ApiKey, "https://www.thebluealliance.com/api/v3/event/2022week0/matches")
-SimpleMatches <- PullData(ApiKey, "https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple")
+Matches <- PullData(ApiKey,
+       "https://www.thebluealliance.com/api/v3/event/2022week0/matches")
+SimpleMatches <- PullData(ApiKey,
+      "https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple")
 
 #MatchSchedule
-MatchSchedule <- filter(SimpleMatches, grepl("qm",SimpleMatches$comp_level)) %>% 
-  select("comp_level", "match_number", "alliances.blue.team_keys", "alliances.red.team_keys") %>% 
+MatchSchedule <- filter(SimpleMatches, grepl("qm",SimpleMatches$comp_level))%>% 
+  select("comp_level", "match_number", "alliances.blue.team_keys", 
+         "alliances.red.team_keys") %>% 
   arrange(match_number)
 
 RedTeam <- data.frame(MatchSchedule$alliances.red.team_keys)
 BlueTeam <- data.frame(MatchSchedule$alliances.blue.team_keys)
 
 for (i in 1:3) {
-  MatchSchedule <- mutate(MatchSchedule, "R" = rep(NA, nrow(MatchSchedule)), "B" = rep(NA, nrow(MatchSchedule)))
+  MatchSchedule <- mutate(MatchSchedule, "R" = rep(NA, nrow(MatchSchedule)), 
+                          "B" = rep(NA, nrow(MatchSchedule)))
   names(MatchSchedule)[i+2] <- paste("R", i, sep = "")
   names(MatchSchedule)[i+5] <- paste("B", i, sep = "")
 }
@@ -53,12 +57,12 @@ for (i in 1:(nrow(MatchSchedule)*6)) {
 }
 
 #TeamInfo
-for(i in 0:19) {
-  Url <- paste('https://www.thebluealliance.com/api/v3/teams/',i,
-               '?X-TBA-Auth-Key=SBcyOBkFgzIQ8jVIlum24FnnI4KPq4VSA5MYtdCVMgDrZYaMfYduTjMGKO5A9AVz', sep='')
-  ExportName <- paste('TeamData/', i+1 ,'.csv', sep='')
-  write.csv(PullData(ApiKey, Url),ExportName,row.names = FALSE)
-}
+#for(i in 0:19) {
+#  Url <- paste('https://www.thebluealliance.com/api/v3/teams/',i,
+#               '?X-TBA-Auth-Key=',ApiKey, sep='')
+#  ExportName <- paste('TeamData/', i+1 ,'.csv', sep='')
+#  write.csv(PullData(ApiKey, Url),ExportName,row.names = FALSE)
+#}
 
 
 
@@ -70,21 +74,27 @@ for(i in 0:19) {
 #Import ZipGrade Data
 RawZipGrade <- read.csv('ExportQuizFullDetail-S12Week0.csv')
 #Create RawData
-RawData <- select(RawZipGrade, Stu1, Stu2, Stu3, Stu4, Stu5, Stu6, Stu7, Stu8, Stu9,
-                  Stu10, Stu11, Stu12, Stu13, Stu14, Stu15, Stu16, Stu17, Stu18, Stu19,
-                  Stu20, Stu21, Stu22, Stu23, Stu24, Stu25, Stu26, Stu27, Stu28, Stu29,
-                  Stu30, Stu31, Stu32, Stu33, Stu34, Stu35, Stu36, Stu37, Stu38, Stu39,
-                  Stu40, Stu41, Stu42, Stu43, Stu44, Stu45, Stu46, Stu47, Stu48, Stu49,
-                  Stu50, Stu51, Stu52, Stu53, Stu54, Stu55, Stu56, Stu57, Stu58, Stu59,
-                  Stu60, Stu61, Stu62, Stu63, Stu64, Stu65, Stu66, Stu67, Stu68, Stu69,
-                  Stu70, Stu71, Stu72, Stu73, Stu74, Stu75, Stu76, Stu77, Stu78, Stu79,
-                  Stu80, Stu81, Stu82, Stu83, Stu84, Stu85, Stu86, Stu87, Stu88, Stu89,
-                  Stu90, Stu91, Stu92, Stu93, Stu94, Stu95, Stu96, Stu97, Stu98, Stu99,
-                  Stu100)
+RawData <- select(RawZipGrade, Stu1, Stu2, Stu3, Stu4, Stu5, Stu6, Stu7, Stu8,
+                  Stu9, Stu10, Stu11, Stu12, Stu13, Stu14, Stu15, Stu16, Stu17,
+                  Stu18, Stu19, Stu20, Stu21, Stu22, Stu23, Stu24, Stu25, Stu26,
+                  Stu27, Stu28, Stu29, Stu30, Stu31, Stu32, Stu33, Stu34, Stu35,
+                  Stu36, Stu37, Stu38, Stu39, Stu40, Stu41, Stu42, Stu43, Stu44,
+                  Stu45, Stu46, Stu47, Stu48, Stu49, Stu50, Stu51, Stu52, Stu53,
+                  Stu54, Stu55, Stu56, Stu57, Stu58, Stu59, Stu60, Stu61, Stu62,
+                  Stu63, Stu64, Stu65, Stu66, Stu67, Stu68, Stu69, Stu70, Stu71,
+                  Stu72, Stu73, Stu74, Stu75, Stu76, Stu77, Stu78, Stu79, Stu80,
+                  Stu81, Stu82, Stu83, Stu84, Stu85, Stu86, Stu87, Stu88, Stu89,
+                  Stu90, Stu91, Stu92, Stu93, Stu94, Stu95, Stu96, Stu97, Stu98,
+                  Stu99, Stu100)
 
 #ScouterID & Team Information
 IssId <- read.csv('IssId.csv')
+names(IssId)[2] <- "IF-ScouterName"
+names(IssId)[3] <- "IF-ScouterID"
+IssId[[1]] <- NULL
+
 TeamData <- read.csv("TeamData.csv")
+
 
 #Data Collection Interface
 Dci <- data.frame(Serial=1:nrow(RawData))
@@ -102,7 +112,8 @@ AsciiToChar <- function(col) {
 NumArray <- function(firstCol, numCol) {
   output <- rep(0, nrow(Dci)) 
   for (i in firstCol:(firstCol + numCol -1)) {
-    output <- output + ifelse(!is.na(RawData[[i]]),RawData[[i]]+5*(i-firstCol)-1,0)
+    output <- output + ifelse(!is.na(RawData[[i]]),RawData[[i]]+
+                                5*(i-firstCol)-1,0)
   }
   return(output)
 }
@@ -174,26 +185,31 @@ Dci <- left_join(Dci, MatchScheduleId, by='IF-ScheduleID')
 TeamData <- select(TeamData, key, nickname)
 names(TeamData)[1] <- "IF-TeamNumber" 
 names(TeamData)[2] <- "IF-TeamName"
-TeamData$`IF-TeamName` <- paste(TeamData$`IF-TeamNumber`,"-", TeamData$`IF-TeamName`)
+TeamData$`IF-TeamName` <- paste(TeamData$`IF-TeamNumber`,"-", 
+                                TeamData$`IF-TeamName`)
 Dci <- left_join(Dci, TeamData, by='IF-TeamNumber')
 
 
-
-
-
 #IF-ScouterID
-Dci$'IF-ScouterID' <- paste(AsciiToChar(3), ifelse(is.na(RawData[[28]]),"",RawData[[28]]), AsciiToChar(53), sep = "")
+Dci$'IF-ScouterID' <- paste(AsciiToChar(3),
+                            ifelse(is.na(RawData[[28]]),"",RawData[[28]]),
+                            AsciiToChar(53), sep = "")
 
-#IF-ScouterSeq
-Dci$'IF-ScouterSeq' <- ifelse(is.na(RawData[[3]]),0,RawData[[3]]-1)*25 +
-                       ifelse(is.na(RawData[[28]]),0,RawData[[28]]-1)*5 +
-                       ifelse(is.na(RawData[[53]]),0,RawData[[53]])
-
+#IF-ScouterName
+Dci <- left_join(Dci, IssId, by='IF-ScouterID')
 
 #IF-OfficialID
-Dci$'IF-OfficialID' <- paste(AsciiToChar(76), ifelse(is.na(RawData[[77]]),"",RawData[[77]]), AsciiToChar(78), sep = "")
+Dci$'IF-OfficialID' <- c(rep(NA, nrow(RawData)))
+
+
+Dci$'IF-OfficialID' <- paste(AsciiToChar(76),
+                             ifelse(is.na(RawData[[77]]),"",RawData[[77]]),
+                             AsciiToChar(78), sep = "")
 
 #IF-OfficialName
+names(IssId)[1] <- 'IF-OfficialName'
+names(IssId)[2] <- 'IF-OfficialID'
+Dci <- left_join(Dci, IssId, by='IF-OfficialID')
 
 
 #IF-Rescout
