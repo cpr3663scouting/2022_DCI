@@ -13,48 +13,105 @@ PullData <- function(Key, URL) {
 }
 
 Matches <- PullData(ApiKey,
-       "https://www.thebluealliance.com/api/v3/event/2022week0/matches")
-SimpleMatches <- PullData(ApiKey,
-      "https://www.thebluealliance.com/api/v3/event/2022week0/matches/simple")
+       "https://www.thebluealliance.com/api/v3/event/2022wasno/matches")
 
 #MatchSchedule
-MatchSchedule <- filter(SimpleMatches, grepl("qm",SimpleMatches$comp_level))%>% 
-  select("comp_level", "match_number", "alliances.blue.team_keys", 
-         "alliances.red.team_keys") %>% 
+Matches <- filter(Matches, grepl("qm",Matches$comp_level))%>% 
+  select('comp_level', #0
+         'match_number', #1
+         
+         'alliances.red.team_keys', #2
+         'score_breakdown.red.adjustPoints', #3 PLACE HOLDER - R1
+         'score_breakdown.red.autoCargoLowerFar', #4 PLACE HOLDER - R2
+         'score_breakdown.red.autoCargoLowerNear', #5 PLACE HOLDER - R3
+         'score_breakdown.red.taxiRobot1', #6
+         'score_breakdown.red.taxiRobot2', #7
+         'score_breakdown.red.taxiRobot3', #8
+         'score_breakdown.red.autoCargoLowerRed', #9
+         'score_breakdown.red.autoCargoUpperRed', #10
+         'score_breakdown.red.teleopCargoLowerRed', #11
+         'score_breakdown.red.teleopCargoUpperRed', #12
+         'score_breakdown.red.endgameRobot1', #13
+         'score_breakdown.red.endgameRobot2', #14
+         'score_breakdown.red.endgameRobot3', #15
+         
+         'alliances.blue.team_keys', #16
+         'score_breakdown.blue.adjustPoints', #17 PLACE HOLDER - B1
+         'score_breakdown.blue.autoCargoLowerFar', #18 PLACE HOLDER - B2
+         'score_breakdown.blue.autoCargoLowerNear', #19 PLACE HOLDER - B3
+         'score_breakdown.blue.taxiRobot1', #20
+         'score_breakdown.blue.taxiRobot2', #21
+         'score_breakdown.blue.taxiRobot3', #22
+         'score_breakdown.blue.autoCargoLowerBlue', #23
+         'score_breakdown.blue.autoCargoUpperBlue', #24
+         'score_breakdown.blue.teleopCargoLowerBlue', #25
+         'score_breakdown.blue.teleopCargoUpperBlue', #26
+         'score_breakdown.blue.endgameRobot1', #27
+         'score_breakdown.blue.endgameRobot2', #28
+         'score_breakdown.blue.endgameRobot3', #29
+         ) %>% 
   arrange(match_number)
 
-RedTeam <- data.frame(MatchSchedule$alliances.red.team_keys)
-BlueTeam <- data.frame(MatchSchedule$alliances.blue.team_keys)
+Matches$'comp_level' <- NULL
+RedTeam <- data.frame(Matches$alliances.red.team_keys)
+BlueTeam <- data.frame(Matches$alliances.blue.team_keys)
 
-for (i in 1:3) {
-  MatchSchedule <- mutate(MatchSchedule, "R" = rep(NA, nrow(MatchSchedule)), 
-                          "B" = rep(NA, nrow(MatchSchedule)))
-  names(MatchSchedule)[i+2] <- paste("R", i, sep = "")
-  names(MatchSchedule)[i+5] <- paste("B", i, sep = "")
-}
-
-for (i in 1:nrow(MatchSchedule)) {
+for (i in 1:nrow(Matches)) {
   for (j in 1:3) {
-    MatchSchedule[i,j+2] <- RedTeam[j,i]
-    MatchSchedule[i,j+5] <- BlueTeam[j,i]
+    Matches[i,j+2] <- RedTeam[j,i]
+    Matches[i,j+16] <- BlueTeam[j,i]
   }
 }
-MatchSchedule$'comp_level' <- NULL
-names(MatchSchedule)[1] <- "MatchNumber"
 
+names(Matches)[1] <- "MatchNumber"
+names(Matches)[3] <- "TeamKeyR1"
+names(Matches)[4] <- "TeamKeyR2"
+names(Matches)[5] <- "TeamKeyR3"
+names(Matches)[6] <- "TaxiR1"
+names(Matches)[7] <- "TaxiR2"
+names(Matches)[8] <- "TaxiR3"
+names(Matches)[9] <- "AutoLowRed"
+names(Matches)[10] <- "AutoHighRed"
+names(Matches)[11] <- "TeleLowRed"
+names(Matches)[12] <- "TeleHighRed"
+names(Matches)[13] <- "ClimbR1"
+names(Matches)[14] <- "ClimbR2"
+names(Matches)[15] <- "ClimbR3"
+names(Matches)[17] <- "TeamKeyB1"
+names(Matches)[18] <- "TeamKeyB2"
+names(Matches)[19] <- "TeamKeyB3"
+names(Matches)[20] <- "TaxiB1"
+names(Matches)[21] <- "TaxiB2"
+names(Matches)[22] <- "TaxiB3"
+names(Matches)[23] <- "AutoLow"
+names(Matches)[24] <- "AutoHighRed"
+names(Matches)[25] <- "TeleLowRed"
+names(Matches)[26] <- "TeleHighRed"
+names(Matches)[27] <- "ClimbR1"
+names(Matches)[28] <- "ClimbR2"
+names(Matches)[29] <- "ClimbR3"
 
-MatchScheduleId <- data.frame(rep(NA, nrow(MatchSchedule)*6),
-                              rep(NA, nrow(MatchSchedule)*6))
-names(MatchScheduleId)[1] <- "IF-ScheduleID"
-names(MatchScheduleId)[2] <- "IF-TeamKey"
+Matches$'alliances.red.team_keys' <- NULL
+Matches$'alliances.blue.team_keys' <- NULL
 
+MatchSchedule1 <- select(Matches,'MatchNumber','TeamKeyR1',
+                         'TeamKeyR1','TeamKeyR2','TeamKeyR3','TeamKeyB1',
+                         'TeamKeyB2','TeamKeyB3')
 
-for (i in 1:(nrow(MatchSchedule)*6)) {
-  MatchScheduleId[[i,1]] <- (i+5)%/%6*100+(i+5)%%6+1
+MatchSchedule2 <- data.frame(rep(NA, nrow(Matches)*6),
+                              rep(NA, nrow(Matches)*6))
+names(MatchSchedule2)[1] <- "IF-ScheduleID"
+names(MatchSchedule2)[2] <- "IF-TeamKey"
+
+for (i in 1:(nrow(Matches)*6)) {
+  MatchSchedule2[[i,1]] <- (i+5)%/%6*100+(i+5)%%6+1
 }
-for (i in 1:(nrow(MatchSchedule)*6)) {
-  MatchScheduleId[[i,2]] <- MatchSchedule[[(i+5)%/%6,(i+5)%%6+2]]
+for (i in 1:(nrow(Matches)*6)) {
+  MatchSchedule2[[i,2]] <- MatchSchedule1[[(i+5)%/%6,(i+5)%%6+2]]
 }
+
+#SimpleMatches <- PullData(ApiKey,
+#     "https://www.thebluealliance.com/api/v3/event/2022wasno/matches/simple")
 
 #TeamInfo
 #for(i in 0:19) {
@@ -99,6 +156,7 @@ TeamData <- read.csv("TeamData.csv")
 Dci <- data.frame(Serial=1:nrow(RawData)) #Data Collection Interface
 Cnt <- data.frame(Serial=1:nrow(RawData)) #Bubble Count
 Ver <- data.frame(Serial=1:nrow(RawData)) #Data Verification
+
 
 #Functions
 BubbleCount <- function(b1, b2, b3, b4, b5, col) {
@@ -209,7 +267,7 @@ Dci$'IF-ScheduleID' <- Dci$'IF-MatchNumber'*100 +
 
 
 # IF-TeamKey
-Dci <- left_join(Dci, MatchScheduleId, by='IF-ScheduleID')
+Dci <- left_join(Dci, MatchSchedule2, by='IF-ScheduleID')
 
 
 # IF-TeamNumber
@@ -668,24 +726,9 @@ Dci$'Scan-ScouterTotal#' <- Dci$'Scan-ScouterFixed#' +
                             Dci$'Scan-ScouterDynamic#'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Output
 write.csv(Dci,"DCI Data.csv",row.names = FALSE)
 
 # Export Completed
-# Mission Control R-Scipt V0.91 Beta B12226
+# Mission Control R-Scipt V0.92 Beta B12227
 # CPR ISS Division | Cedar Park Robotics Team 3663
