@@ -600,7 +600,7 @@ Dci$'Scan-ScouterTotal#' <- Dci$'Scan-ScouterFixed#' +
                             Dci$'Scan-ScouterDynamic#'
 
 # Output
-write.csv(Dci,"DciData.csv",row.names = FALSE)
+write.csv(Dci,"DCI Data.csv",row.names = FALSE)
 
 print("Mission Control R-Scipt V0.93 Beta B12316")
 print("CPR ISS Division | Cedar Park Robotics Team 3663")
