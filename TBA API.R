@@ -53,6 +53,7 @@ Matches <- filter(Matches, grepl("qm",Matches$comp_level))%>%
   arrange(match_number)
 
 Matches$'comp_level' <- NULL
+
 RedTeam <- data.frame(Matches$alliances.red.team_keys)
 BlueTeam <- data.frame(Matches$alliances.blue.team_keys)
 
@@ -110,11 +111,11 @@ MatchSchedule <- data.frame(rep(NA, nrow(Matches)*6),
 names(MatchSchedule)[1] <- "IF-ScheduleID"
 names(MatchSchedule)[2] <- "IF-TeamKey"
 
-for (i in 1:(nrow(Matches)*6)) {
-  MatchSchedule[[i,1]] <- (i+5)%/%6*100+(i+5)%%6+1
-}
-for (i in 1:(nrow(Matches)*6)) {
-  MatchSchedule[[i,2]] <- ScheduleData[[(i+5)%/%6,(i+5)%%6+2]]
+for (i in 1:nrow(Matches)) {
+  for (j in 1:6) {
+    MatchSchedule[[(i-1)*6+j,1]] <- i*100 + j
+    MatchSchedule[[(i-1)*6+j,2]] <- ScheduleData[[i, j+1]]
+  }
 }
 
 write.csv(MatchSchedule,"MatchSchedule.csv",row.names = FALSE)
@@ -125,46 +126,30 @@ MatchStats <- MatchSchedule
 MatchStats$'Auto-Taxi' <- rep(NA, nrow(Matches)*6)
 for (i in 1:(nrow(Matches)*6)) {
   MatchStats[[i,3]] <- TaxiData[[(i+5)%/%6,(i+5)%%6+2]]
+  MatchStats[[i,3]] <- ifelse(grepl("Yes", MatchStats[[i,3]]), 1, 0)
 }
 
 MatchStats$'Auto-LowScored#' <- rep(NA, nrow(Matches)*6)
-for (i in 1:nrow(Matches)) {
-  for (j in 1:6) {
-    MatchStats[[(i-1)*6+j,3]] <- Matches[i, 8 + (j-1)%/%3*13]
-  }
-}
-
 MatchStats$'Auto-HighScored#' <- rep(NA, nrow(Matches)*6)
-for (i in 1:nrow(Matches)) {
-  for (j in 1:6) {
-    MatchStats[[(i-1)*6+j,4]] <- Matches[i, 9 + (j-1)%/%3*13]
-  }
-}
-
-MatchStats$'Auto-HighScored#' <- rep(NA, nrow(Matches)*6)
-for (i in 1:nrow(Matches)) {
-  for (j in 1:6) {
-    MatchStats[[(i-1)*6+j,5]] <- Matches[i, 10 + (j-1)%/%3*13]
-  }
-}
-
 MatchStats$'Tele-LowScored#' <- rep(NA, nrow(Matches)*6)
-for (i in 1:nrow(Matches)) {
-  for (j in 1:6) {
-    MatchStats[[(i-1)*6+j,6]] <- Matches[i, 11 + (j-1)%/%3*13]
-  }
-}
-
 MatchStats$'Tele-HighScored#' <- rep(NA, nrow(Matches)*6)
+
 for (i in 1:nrow(Matches)) {
   for (j in 1:6) {
-    MatchStats[[(i-1)*6+j,7]] <- Matches[i, 13 + (j-1)%/%3*14]
+    MatchStats[[(i-1)*6+j,4]] <- Matches[i, 8 + (j-1)%/%3*13]
+    MatchStats[[(i-1)*6+j,5]] <- Matches[i, 9 + (j-1)%/%3*13]
+    MatchStats[[(i-1)*6+j,6]] <- Matches[i, 10 + (j-1)%/%3*13]
+    MatchStats[[(i-1)*6+j,7]] <- Matches[i, 11 + (j-1)%/%3*13]
   }
 }
 
-MatchStats$'EG-ClimbLevel' <- rep(NA, nrow(Matches)*6)
+MatchStats$'EG-TotalPoints' <- rep(NA, nrow(Matches)*6)
 for (i in 1:(nrow(Matches)*6)) {
   MatchStats[[i,8]] <- ClimbData[[(i+5)%/%6,(i+5)%%6+2]]
+  MatchStats[[i,8]] <- ifelse(grepl("Low", MatchStats[[i,8]]), 4,
+                       ifelse(grepl("Mid", MatchStats[[i,8]]), 6,
+                       ifelse(grepl("High", MatchStats[[i,8]]), 10,
+                       ifelse(grepl("Traversal", MatchStats[[i,8]]), 15, 0))))
 }
 
 write.csv(MatchStats,"MatchStats.csv",row.names = FALSE)
