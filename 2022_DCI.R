@@ -207,17 +207,17 @@ Dci$'Auto-TaxiPoints' <- Point(Dci$'Auto-Taxi',2)
 
 
 # Auto-LowScored#
-Cnt$'Auto-LowScored#' <- BubbleCount(T, T, T, T, T, 7) +
-                         BubbleCount(T, T, T, T, T, 8)
+Cnt$'Auto-LowScored#' <- BubbleCount(T, T, T, T, T, 30) +
+                         BubbleCount(T, T, T, T, T, 31)
 Dci$'Auto-LowScored#' <- c(rep(NA, nrow(RawData)))
-Dci$'Auto-LowScored#' <- NumArray(7,2)
+Dci$'Auto-LowScored#' <- NumArray(30,2)
 
 
 # Auto-LowMissed#
-Cnt$'Auto-LowMissed#' <- BubbleCount(T, T, T, T, T, 32) +
-                         BubbleCount(T, T, T, T, T, 33)
+Cnt$'Auto-LowMissed#' <- BubbleCount(T, T, T, T, T, 80) +
+                         BubbleCount(T, T, T, T, T, 81)
 Dci$'Auto-LowMissed#' <- c(rep(NA, nrow(RawData)))
-Dci$'Auto-LowMissed#' <- NumArray(32, 2)
+Dci$'Auto-LowMissed#' <- NumArray(80, 2)
 
 
 # Auto-LowAccuracy
@@ -231,10 +231,10 @@ Dci$'Auto-LowPoints' <- Point(Dci$'Auto-LowScored#',2)
 
 
 # Auto-HighScored#
-Cnt$'Auto-HighScored#' <- BubbleCount(T, T, T, T, T, 57) +
-                         BubbleCount(T, T, T, T, T, 58)
+Cnt$'Auto-HighScored#' <- BubbleCount(T, T, T, T, T,32) +
+                         BubbleCount(T, T, T, T, T, 33)
 Dci$'Auto-HighScored#' <- c(rep(NA, nrow(RawData)))
-Dci$'Auto-HighScored#' <- NumArray(57,2)
+Dci$'Auto-HighScored#' <- NumArray(32,2)
 
 
 # Auto-HighMissed#
@@ -270,21 +270,23 @@ Dci$'Auto-TotalPoints' <- Dci$'Auto-TaxiPoints' + Dci$'Auto-LowPoints' + Dci$'Au
 
 
 # Tele-LowScored#
-Cnt$'Tele-LowScored#' <- BubbleCount(T, T, T, T, T, 13) +
-                          BubbleCount(T, T, T, T, T, 14) +
-                          BubbleCount(T, T, T, T, T, 15) +
-                          BubbleCount(T, T, T, T, T, 16)
+Cnt$'Tele-LowScored#' <- BubbleCount(T, T, T, T, T, 11) +
+                          BubbleCount(T, T, T, T, T, 12) +
+                          BubbleCount(T, T, T, T, T, 36) +
+                          BubbleCount(T, T, T, T, T, 37)
 Dci$'Tele-LowScored#' <- c(rep(NA, nrow(RawData)))
-Dci$'Tele-LowScored#' <- NumArray(13,4)
+Dci$'Tele-LowScored#' <- ifelse(!is.na(RawData[[11]]),RawData[[11]]-1,RawData[[36]]+4)*10+
+                         ifelse(!is.na(RawData[[12]]),RawData[[12]]-1,RawData[[37]]+4)
 
 
 # Tele-LowMissed#
-Cnt$'Tele-LowMissed#' <- BubbleCount(T, T, T, T, T, 38) +
-                         BubbleCount(T, T, T, T, T, 39) +
-                         BubbleCount(T, T, T, T, T, 40) +
-                         BubbleCount(T, T, T, T, T, 41)
+Cnt$'Tele-LowMissed#' <- BubbleCount(T, T, T, T, T, 61) +
+                         BubbleCount(T, T, T, T, T, 62) +
+                         BubbleCount(T, T, T, T, T, 86) +
+                         BubbleCount(T, T, T, T, T, 87)
 Dci$'Tele-LowMissed#' <- c(rep(NA, nrow(RawData)))
-Dci$'Tele-LowMissed#' <- NumArray(38,4)
+Dci$'Tele-LowMissed#' <- ifelse(!is.na(RawData[[61]]),RawData[[61]]-1,RawData[[86]]+4)*10+
+                         ifelse(!is.na(RawData[[62]]),RawData[[62]]-1,RawData[[87]]+4)
 
 
 # Tele-LowAccuracy
@@ -298,22 +300,23 @@ Dci$'Tele-LowPoints' <- Point(Dci$'Tele-LowScored#', 1)
 
 
 # Tele-HighScored#
-Cnt$'Tele-HighScored#' <- BubbleCount(T, T, T, T, T, 63) +
-                          BubbleCount(T, T, T, T, T, 64) +
-                          BubbleCount(T, T, T, T, T, 65) +
-                          BubbleCount(T, T, T, T, T, 66)
+Cnt$'Tele-HighScored#' <- BubbleCount(T, T, T, T, T, 15) +
+                          BubbleCount(T, T, T, T, T, 16) +
+                          BubbleCount(T, T, T, T, T, 40) +
+                          BubbleCount(T, T, T, T, T, 41)
 Dci$'Tele-HighScored#' <- c(rep(NA, nrow(RawData)))
-Dci$'Tele-HighScored#' <- NumArray(63,4)
+Dci$'Tele-HighScored#' <- ifelse(!is.na(RawData[[15]]),RawData[[15]]-1,RawData[[40]]+4)*10+
+                          ifelse(!is.na(RawData[[16]]),RawData[[16]]-1,RawData[[41]]+4)
 
 
 # Tele-HighMissed#
-Cnt$'Tele-HighMissed#' <- BubbleCount(T, T, T, T, T, 88) +
-                          BubbleCount(T, T, T, T, T, 89) +
+Cnt$'Tele-HighMissed#' <- BubbleCount(T, T, T, T, T, 65) +
+                          BubbleCount(T, T, T, T, T, 66) +
                           BubbleCount(T, T, T, T, T, 90) +
                           BubbleCount(T, T, T, T, T, 91)
 Dci$'Tele-HighMissed#' <- c(rep(NA, nrow(RawData)))
-Dci$'Tele-HighMissed#' <- NumArray(88,4)
-
+Dci$'Tele-HighMissed#' <- ifelse(!is.na(RawData[[65]]),RawData[[65]]-1,RawData[[90]]+4)*10+
+                           ifelse(!is.na(RawData[[66]]),RawData[[66]]-1,RawData[[91]]+4)
 
 # Tele-HighAccuracy
 Dci$'Tele-HighAccuracy' <- c(rep(NA, nrow(RawData)))
@@ -602,5 +605,5 @@ Dci$'Scan-ScouterTotal#' <- Dci$'Scan-ScouterFixed#' +
 # Output
 write.csv(Dci,"DCI Data.csv",row.names = FALSE)
 
-print("Mission Control R-Scipt V0.93 Beta B12316")
+print("Mission Control R-Scipt V0.93 Beta B12328")
 print("CPR ISS Division | Cedar Park Robotics Team 3663")
